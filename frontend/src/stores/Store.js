@@ -4,6 +4,7 @@ class Store {
 
     selectedProduct = "";
     searchValue = "Search"
+    cart = []
 
     constructor() {
         makeAutoObservable(this);
@@ -21,6 +22,23 @@ class Store {
 
     setSearchValue(value) {
         this.searchValue = value;
+    }
+
+    addItemToCart(itemName) {
+        this.cart = this.cart.map((item) => {
+            if (itemName === item.name) {
+                return { ...item, quantity: item.quantity + 1 };
+            }
+            return item;
+        })
+    }
+
+    getCart(){
+        return this.cart;
+    }
+
+    getCartCount(){
+      return 0;
     }
 }
 
