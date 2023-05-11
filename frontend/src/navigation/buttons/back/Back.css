@@ -1,0 +1,11 @@
+.Back{
+    border-radius: 10px;
+    /* align-items: center; */
+    background-color: #eaeaea;
+    aspect-ratio: 1 / 1;
+    text-align: center;
+}
+
+.Back:hover{
+    background-color: #c2c2c2;
+}

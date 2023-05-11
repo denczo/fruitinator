@@ -1,0 +1,35 @@
+.Product {
+    /* border-radius: 20px; */
+    /* border: 2px solid; */
+    /* width: 150px; */
+    aspect-ratio: 1 / 1;
+    /* height: auto; */
+    max-width: 200px;
+    padding: 25px;
+    margin: 10px;
+    font-size: 16px;
+    background-size: 300% 100%;
+
+    /* moz-transition: all .4s ease-in-out; */
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.Product img{
+    max-width: 100%;
+    height: auto;
+}
+
+.Product:hover {
+    background-position: 100% 0;
+    /* moz-transition: all .4s ease-in-out; */
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.Product.color {
+    background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
+    /* box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75); */
+}

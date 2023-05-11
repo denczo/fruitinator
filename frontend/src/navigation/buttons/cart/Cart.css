@@ -1,0 +1,14 @@
+.Cart{
+    border-radius: 10px;
+
+    /* display: flex; */
+    /* align-items: center; */
+    background-color: #eaeaea;
+    aspect-ratio: 1 / 1;
+    text-align: center;
+}
+
+.Cart img{
+    max-width: 100%;
+    height: auto;
+}

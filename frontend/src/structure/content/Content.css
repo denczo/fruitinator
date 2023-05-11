@@ -1,0 +1,17 @@
+.Content {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    min-height: 100%;
+    padding: 20px;
+    background-color: grey;
+    /* box-shadow: 10px 10px 50px 0 rgba(0, 0, 0, 0.1); */
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.Content::-webkit-scrollbar {
+    display: none;
+}
