@@ -1,11 +1,22 @@
 .Back{
     border-radius: 10px;
-    /* align-items: center; */
-    background-color: #eaeaea;
+    background-color: #f3f3f3;
     aspect-ratio: 1 / 1;
     text-align: center;
+    display: flex;      
+    justify-content: center;
+    align-items: center;
 }
 
 .Back:hover{
     background-color: #c2c2c2;
+}
+
+.arrow {
+    width: 15px;
+    height: 15px;
+    border: 10px solid #9b9b9b;
+    border-left: 0;
+    border-top: 0;
+    transform: rotate(135deg);
 }

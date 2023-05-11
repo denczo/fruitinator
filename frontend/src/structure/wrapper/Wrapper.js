@@ -4,12 +4,13 @@ import {BrowserRouter as Router} from 'react-router-dom';
 import Navbar from '../../navigation/navbar/Navbar';
 import Content from '../content/Content';
 import Footer from '../footer/Footer';
+import Header from '../header/Header';
 // import ProductInfo from '../screens/productInfo/ProductInfo';
 
 const Wrapper = () => {
     return (<div className="Wrapper">
         <Router>
-            <h2>Fruitinator | healthy food ... always</h2>
+            <Header/>
             <Navbar/>
             <Content/>
             <Footer/>
