@@ -4,7 +4,7 @@
     height: 100%;
     min-height: 100%;
     padding: 20px;
-    background-color: grey;
+    background: linear-gradient(#efefef, #ffffff);
     /* box-shadow: 10px 10px 50px 0 rgba(0, 0, 0, 0.1); */
     overflow-y: scroll;
     -ms-overflow-style: none;  /* IE and Edge */

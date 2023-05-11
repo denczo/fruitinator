@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import store from "../../../../stores/Store"
 import './Product.css';
+import Add from '../../../../navigation/buttons/add/Add';
 
     const Product = ({data}) => {
 
@@ -17,6 +18,7 @@ import './Product.css';
         <div><b>{title}</b></div>
         <div><b>{'$ '+price/100}</b></div>
         <img key={image} src={image}></img>
+        <Add />
     </div>);
 }
 

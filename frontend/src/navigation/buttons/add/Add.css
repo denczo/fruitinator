@@ -1,0 +1,12 @@
+.Add{
+    background-color: #eaeaea;
+    /* aspect-ratio: 1 / 1; */
+    max-width: 50px;
+    text-align: center;
+    align-self: flex-end;
+    justify-content: flex-end;
+}
+
+.Add:hover{
+    background-color: #c2c2c2;
+}

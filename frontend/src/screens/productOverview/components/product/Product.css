@@ -4,6 +4,8 @@
     /* width: 150px; */
     aspect-ratio: 1 / 1;
     /* height: auto; */
+    /* display: flex; */
+    /* justify-content: center; */
     max-width: 200px;
     padding: 25px;
     margin: 10px;
@@ -30,6 +32,6 @@
 }
 
 .Product.color {
-    background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
+    background-image: linear-gradient(to right, #a7ffd9, #4ff1bd, #3ff89e, #2ade87);
     /* box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75); */
 }
