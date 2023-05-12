@@ -6,10 +6,11 @@
     display: flex;      
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .Back:hover{
-    background-color: #c2c2c2;
+    border: 3px solid #707070;
 }
 
 .arrow {

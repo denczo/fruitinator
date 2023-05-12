@@ -3,8 +3,8 @@ import { makeAutoObservable } from "mobx"
 class Store {
 
     selectedProduct = "";
-    searchValue = "Search"
-    cart = []
+    searchValue = ""
+    cart = new Map()
 
     constructor() {
         makeAutoObservable(this);
@@ -24,13 +24,19 @@ class Store {
         this.searchValue = value;
     }
 
-    addItemToCart(itemName) {
-        this.cart = this.cart.map((item) => {
-            if (itemName === item.name) {
-                return { ...item, quantity: item.quantity + 1 };
-            }
-            return item;
-        })
+    addItemToCart(item) {
+        if(this.cart.has(item.data)){
+            const updatedCart = new Map(this.cart)
+            const sum = this.cart.get(item.data) + item.amount
+            updatedCart.set(item.data, sum)
+            this.cart = updatedCart;
+        }else{
+            this.cart.set(item.data, item.amount)
+        }
+    }
+
+    updateCart(item){
+
     }
 
     getCart(){
@@ -38,7 +44,9 @@ class Store {
     }
 
     getCartCount(){
-      return 0;
+        let sum = 0;
+        this.cart.forEach(value => sum += value);
+        return sum
     }
 }
 

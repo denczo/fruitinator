@@ -1,7 +1,7 @@
 .Add{
     background-color: #eaeaea;
-    /* aspect-ratio: 1 / 1; */
-    max-width: 50px;
+    aspect-ratio: 1 / 1;
+    max-width: 80px;
     text-align: center;
     align-self: flex-end;
     justify-content: flex-end;

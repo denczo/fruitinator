@@ -17,8 +17,8 @@ import Add from '../../../../navigation/buttons/add/Add';
     return (<div className="Product color" onClick={() => handleClick(data)} style={{borderColor: backgroundColor}}>
         <div><b>{title}</b></div>
         <div><b>{'$ '+price/100}</b></div>
-        <img key={image} src={image}></img>
-        <Add />
+        <img key={image} src={image} alt=""></img>
+        <Add data={title} amount={1}/>
     </div>);
 }
 

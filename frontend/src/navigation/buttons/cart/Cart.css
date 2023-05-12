@@ -5,6 +5,11 @@
     display: flex;      
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+.Cart:hover{
+    border: 3px solid #707070;
 }
 
 .Cart img{

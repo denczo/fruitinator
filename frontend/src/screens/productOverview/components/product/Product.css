@@ -1,5 +1,5 @@
 .Product {
-    /* border-radius: 20px; */
+    border-radius: 20px;
     /* border: 2px solid; */
     /* width: 150px; */
     aspect-ratio: 1 / 1;
@@ -32,6 +32,6 @@
 }
 
 .Product.color {
-    background-image: linear-gradient(to right, #a7ffd9, #4ff1bd, #3ff89e, #2ade87);
-    /* box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75); */
+    /* background-image: linear-gradient(to right, #a7ffd9, #4ff1bd, #3ff89e, #2ade87); */
+    box-shadow: 0 4px 15px 0 rgba(211, 211, 211, 0.75);
 }
