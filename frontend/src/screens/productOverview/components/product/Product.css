@@ -1,4 +1,7 @@
 .Product {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
     border-radius: 20px;
     /* border: 2px solid; */
     /* width: 150px; */
