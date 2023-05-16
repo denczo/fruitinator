@@ -4,7 +4,7 @@ class Store {
 
     selectedProduct = "";
     searchValue = ""
-    cart = new Map()
+    cart = []
 
     constructor() {
         makeAutoObservable(this);
@@ -25,28 +25,29 @@ class Store {
     }
 
     addItemToCart(item) {
-        if(this.cart.has(item.data)){
-            const updatedCart = new Map(this.cart)
-            const sum = this.cart.get(item.data) + item.amount
-            updatedCart.set(item.data, sum)
-            this.cart = updatedCart;
-        }else{
-            this.cart.set(item.data, item.amount)
+        if (this.cart.some(element => element.name === item.data)) {
+            this.cart = this.cart.map((element) => {
+                let amount = item.amount + element.amount
+                if (element.name === item.data) {
+                    return { ...element, amount };
+                } else {
+                    return element;
+                }
+            })
+        } else {
+            this.cart.push({ name: item.data, amount: item.amount, price: item.price })
         }
-    }
-
-    updateCart(item){
 
     }
 
-    getCart(){
+    getCart() {
         return this.cart;
     }
 
-    getCartCount(){
-        let sum = 0;
-        this.cart.forEach(value => sum += value);
-        return sum
+    getCartCount() {
+        return this.cart.reduce(function (sum, item) {
+            return sum + item.amount
+        }, 0);
     }
 }
 

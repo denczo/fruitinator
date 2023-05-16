@@ -19,6 +19,10 @@
     animation: animate 10s linear infinite;
 }
 
+.logo:hover{
+    cursor: pointer;
+}
+
 @keyframes animate {
     to {
         background-position: 400%;

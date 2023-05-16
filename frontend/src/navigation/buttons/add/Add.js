@@ -1,12 +1,10 @@
 import React from 'react';
 import './Add.css';
 import store from "../../../stores/Store"
-// import { observer } from "mobx-react";
 
-const Add = (name, amount) => {
-    return (<div className="Add" onClick={(e) => {e.stopPropagation(); store.addItemToCart(name, amount)}}>
+const Add = (name, amount, price) => {
+    return (<div className="Add" onClick={(e) => {e.stopPropagation(); store.addItemToCart(name, amount, price)}}>
         {"+"}
-        {/* <p>{"+"}</p> */}
     </div>);
 }
 

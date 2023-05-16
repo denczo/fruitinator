@@ -20,7 +20,7 @@ import Add from '../../../../navigation/buttons/add/Add';
             <div><b>{'$ '+price/100}</b></div>
             <img key={image} src={image} alt=""></img>
         </div>
-        <Add data={title} amount={1}/>
+        <Add data={title} amount={1} price={price}/>
     </div>);
 }
 
