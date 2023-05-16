@@ -3,8 +3,9 @@ import './Footer.css';
 
 const Footer = () => {
     return (<div className="Footer">
-        <h2>Footer</h2>
-        
+        <h2>FRUITINATOR</h2>
+        <span>This is a demo website for e-commerce.</span>
+        <span>Copyright &copy; {new Date().getFullYear()} Dennis-Immanuel Czogalla</span>
     </div>);
 }
 

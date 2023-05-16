@@ -6,8 +6,18 @@ import store from "../../../stores/Store"
 
 const Cart = () => {
     let navigate = useNavigate();
+    const cartCount = store.getCartCount()
     return (<div className="Cart" onClick={() => navigate("/cart")}>
-        <div className="Bucket">{store.getCartCount()}</div>
+        <div className="Bucket">
+            {cartCount > 0 ? (
+                <div key={cartCount} className="CircleAnimation">
+                    {cartCount}
+                </div>
+            ) :
+                (<div>
+                    <b>{cartCount}</b>
+                </div>)}
+        </div>
     </div>);
 }
 

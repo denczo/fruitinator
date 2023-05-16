@@ -1,22 +1,21 @@
 .Product {
     display: flex;
     flex-direction: column;
-    border-radius: 20px;
+    border-radius: 20px 70px 20px 70px;
+    /* border-radius: 20px; */
     aspect-ratio: 1 / 1;
     width: 50%;
-
     max-width: 250px;
-    /* height: 300px; */
-    /* width: 250px; */
-    /* padding: 25px; */
     margin: 10px;
     font-size: 16px;
     background-size: 300% 100%;
+    transition: transform 250ms;
+    animation: 0.5s ease 0s 1 fadeIn;
+}
 
-    moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+
+.Product.color {
+    box-shadow: 0 4px 15px 0 rgba(211, 211, 211, 0.75);
 }
 
 .ProductContent{
@@ -33,14 +32,18 @@
 }
 
 .Product:hover {
-    background-position: 100% 0;
-    /* moz-transition: all .4s ease-in-out; */
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
-.Product.color {
-    /* background-image: linear-gradient(to right, #a7ffd9, #4ff1bd, #3ff89e, #2ade87); */
-    box-shadow: 0 4px 15px 0 rgba(211, 211, 211, 0.75);
-}
+@keyframes fadeIn {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
