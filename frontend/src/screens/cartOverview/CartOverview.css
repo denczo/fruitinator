@@ -2,7 +2,7 @@
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #a7a7a7;
+    background-color: #dadada;
     color: white;
 }
 
@@ -12,11 +12,12 @@
   }
   
   #CartOverview td, #CartOverview th {
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     padding: 14px;
   }
   
-#CartOverview tr:nth-child(even){background-color: #f2f2f2;}
+#CartOverview tr:nth-child(even){background-color: #f3f3f3;}
   
-#CartOverview tr:hover {background-color: #ddd;}
-  
+#CartOverview td img{
+  max-height: 50px;
+}

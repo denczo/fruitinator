@@ -1,0 +1,15 @@
+.Remove{
+    background-color: #d4d4d4;
+    aspect-ratio: 1 / 1;
+    border-radius: 20px 0px 20px 0px;
+    /* min-width: 40px; */
+    padding: 15px;
+    text-align: center;
+    align-self: flex-end;
+    margin-top: auto;
+    cursor: pointer;
+}
+
+.Remove:hover{
+    background-color: #c2c2c2;
+}

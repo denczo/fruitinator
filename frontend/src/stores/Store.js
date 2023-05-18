@@ -25,6 +25,7 @@ class Store {
     }
 
     addItemToCart(item) {
+        console.log("im store"+JSON.stringify(item))
         if (this.cart.some(element => element.name === item.data)) {
             this.cart = this.cart.map((element) => {
                 let amount = item.amount + element.amount
@@ -35,7 +36,7 @@ class Store {
                 }
             })
         } else {
-            this.cart.push({ name: item.data, amount: item.amount, price: item.price })
+            this.cart.push({ name: item.data, amount: item.amount, price: item.price, image: item.image })
         }
 
     }

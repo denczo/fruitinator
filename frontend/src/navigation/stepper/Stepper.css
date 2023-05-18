@@ -1,0 +1,38 @@
+.Stepper{
+    display: flex;
+    flex-direction: column;
+    max-width: 40px;
+    margin: auto;
+}
+
+#Plus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1 / 1;
+    background-color: #dfdfdf;
+    padding: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    /* border-radius: 10px 10px 0px 0px; */
+}
+
+#Minus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1 / 1;
+    background-color: #dfdfdf;
+    padding: 2px;
+    border-radius: 10px;
+    /* border-radius: 0px 0px 10px 10px; */
+    cursor: pointer;
+
+}
+
+#Indicator{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
