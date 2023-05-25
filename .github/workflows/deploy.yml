@@ -12,11 +12,12 @@ jobs:
       node-version: [14.x]
   
   steps:
-   - uses: actions/checkout@v2
+   - uses: actions/checkout@v3
    - name: Use Node.js ${{ matrix.node-version }}
-     uses: actions/setups-node@v1
+     uses: actions/setups-node@v3
      with:
         node-version: ${{ matrix.node-version }}
-   - run: npm i
+        cache: 'npm'
+   - run: npm ci
+   - run: npm run build --if-present
    - run: npm test
-   - run: npm run build
