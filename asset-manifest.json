@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/frontend/webshop/build/static/css/main.2842fef1.css",
+    "main.js": "/frontend/webshop/build/static/js/main.a1c2eca7.js",
+    "static/js/787.5227fab7.chunk.js": "/frontend/webshop/build/static/js/787.5227fab7.chunk.js",
+    "static/media/passionfruit.png": "/frontend/webshop/build/static/media/passionfruit.e60e52cf289a8ee44046.png",
+    "static/media/pear.png": "/frontend/webshop/build/static/media/pear.b38848c1480f37706ed8.png",
+    "static/media/cherry.png": "/frontend/webshop/build/static/media/cherry.ed09ff3b795b063fe6f3.png",
+    "static/media/pineapple.png": "/frontend/webshop/build/static/media/pineapple.5f07e908fea7396cab0e.png",
+    "static/media/blueberry.png": "/frontend/webshop/build/static/media/blueberry.81b1f3b62cb0c4e7b7a9.png",
+    "static/media/mango.png": "/frontend/webshop/build/static/media/mango.635e56adb23408c40215.png",
+    "index.html": "/frontend/webshop/build/index.html",
+    "main.2842fef1.css.map": "/frontend/webshop/build/static/css/main.2842fef1.css.map",
+    "main.a1c2eca7.js.map": "/frontend/webshop/build/static/js/main.a1c2eca7.js.map",
+    "787.5227fab7.chunk.js.map": "/frontend/webshop/build/static/js/787.5227fab7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2842fef1.css",
+    "static/js/main.a1c2eca7.js"
+  ]
+}
