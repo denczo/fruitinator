@@ -7,7 +7,6 @@ import Add from '../../../../navigation/buttons/add/Add';
     const Product = ({data}) => {
 
     const { title, backgroundColor, price, image} = data;
-
     const navigate = useNavigate()
     const handleClick = (data) => {
         navigate('/info')
@@ -20,7 +19,7 @@ import Add from '../../../../navigation/buttons/add/Add';
             <div><b>{'$ '+price/100}</b></div>
             <img key={title} src={image} alt=""></img>
         </div>
-        <Add data={title} amount={1} price={price} image={image}/>
+        <Add data={{title, price, image}}/>
     </div>);
 }
 

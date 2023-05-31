@@ -24,21 +24,35 @@ class Store {
         this.searchValue = value;
     }
 
-    addItemToCart(item) {
-        console.log("im store"+JSON.stringify(item))
-        if (this.cart.some(element => element.name === item.data)) {
-            this.cart = this.cart.map((element) => {
-                let amount = item.amount + element.amount
-                if (element.name === item.data) {
-                    return { ...element, amount };
-                } else {
-                    return element;
-                }
-            })
-        } else {
-            this.cart.push({ name: item.data, amount: item.amount, price: item.price, image: item.image })
-        }
+    increaseItemAmount(name) {
+        this.cart = this.cart.map((element) => {
+            if (element.name === name) {
+                let amount = element.amount + 1
+                return { ...element, amount };
+            } else {
+                return element;
+            }
+        })
+    }
 
+    decreaseItemAmount(name) {
+        this.cart = this.cart.map((element) => {
+            if (element.name === name) {
+                let amount = element.amount - 1
+                return { ...element, amount };
+            } else {
+                return element;
+            }
+        }).filter((element) => element.amount > 0)
+    }
+
+    addItemToCart({ data }) {
+        const { title, price, image } = data;
+        if (this.cart.some(element => element.name === title)) {
+            this.increaseItemAmount(title)
+        } else {
+            this.cart.push({ name: title, amount: 1, price: price, image: image })
+        }
     }
 
     getCart() {
