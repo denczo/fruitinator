@@ -4,3 +4,15 @@
     justify-content: center;
     max-width: 1200px;
 }
+
+#AnimatePresence {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.motion.div{
+    display: flex;
+    flex-direction: column;
+}

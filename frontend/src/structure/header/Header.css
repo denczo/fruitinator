@@ -6,25 +6,3 @@
     padding: 5px;
     /* font-weight: bold; */
 }
-
-.logo{
-    font-size: 50px;
-    font-weight: bold;
-    outline: none;
-    text-transform: uppercase;
-    background: linear-gradient(135deg, #e66465 0%, #f69d3c 25%, #64e694 50%, #f69d3c 75%, #e66465 100%);    background-size: 400%;
-    background-size: 400%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: animate 10s linear infinite;
-}
-
-.logo:hover{
-    cursor: pointer;
-}
-
-@keyframes animate {
-    to {
-        background-position: 400%;
-    }
-}

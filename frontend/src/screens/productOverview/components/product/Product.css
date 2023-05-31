@@ -8,18 +8,19 @@
     max-width: 250px;
     margin: 10px;
     font-size: 16px;
-    background-size: 300% 100%;
+    /* background-size: 300% 100%; */
     transition: transform 250ms;
-    animation: 0.5s ease 0s 1 fadeIn;
-}
-
-
-.Product.color {
+    /* animation: 0.5s ease 0s 1 fadeIn; */
     box-shadow: 0 4px 15px 0 rgba(211, 211, 211, 0.75);
+
 }
 
 .ProductContent{
     padding: 25px 25px 0px 25px;
+}
+.motion.div{
+    padding: 25px 25px 0px 25px;
+
 }
 
 .Product img{

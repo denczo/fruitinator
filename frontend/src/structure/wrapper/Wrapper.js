@@ -12,6 +12,7 @@ const Wrapper = () => {
     return (<div className="Wrapper">
         <Router>
             <Header/>
+            
             <Navbar/>
             {/* <CartOverview/> */}
             <Content/>
