@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/webshop/static/css/main.2842fef1.css",
-    "main.js": "/webshop/static/js/main.e4a52676.js",
+    "main.css": "/webshop/static/css/main.f1740668.css",
+    "main.js": "/webshop/static/js/main.1a73fba6.js",
     "static/js/787.5227fab7.chunk.js": "/webshop/static/js/787.5227fab7.chunk.js",
     "static/media/passionfruit.png": "/webshop/static/media/passionfruit.e60e52cf289a8ee44046.png",
     "static/media/pear.png": "/webshop/static/media/pear.b38848c1480f37706ed8.png",
@@ -10,12 +10,12 @@
     "static/media/blueberry.png": "/webshop/static/media/blueberry.81b1f3b62cb0c4e7b7a9.png",
     "static/media/mango.png": "/webshop/static/media/mango.635e56adb23408c40215.png",
     "index.html": "/webshop/index.html",
-    "main.2842fef1.css.map": "/webshop/static/css/main.2842fef1.css.map",
-    "main.e4a52676.js.map": "/webshop/static/js/main.e4a52676.js.map",
+    "main.f1740668.css.map": "/webshop/static/css/main.f1740668.css.map",
+    "main.1a73fba6.js.map": "/webshop/static/js/main.1a73fba6.js.map",
     "787.5227fab7.chunk.js.map": "/webshop/static/js/787.5227fab7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2842fef1.css",
-    "static/js/main.e4a52676.js"
+    "static/css/main.f1740668.css",
+    "static/js/main.1a73fba6.js"
   ]
 }
