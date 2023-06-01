@@ -19,7 +19,7 @@ const Product = ({ data }) => {
         initial={{ transform: "scale(0)" }}
         animate={{ transform: "scale(1)" }}
         exit={{ transform: "scale(0)" }}
-        layout
+        layout={'position'}
         key={title}
         onClick={() => handleClick(data)}>
         <div className='ProductContent'>

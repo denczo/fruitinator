@@ -3,11 +3,13 @@
     aspect-ratio: 1 / 1;
     border-radius: 20px 0px 20px 0px;
     /* min-width: 40px; */
+    max-width: 20px;
     padding: 15px;
     text-align: center;
     align-self: flex-end;
     margin-top: auto;
     cursor: pointer;
+    /* justify-content: flex-end; */
 }
 
 .Add:hover{
