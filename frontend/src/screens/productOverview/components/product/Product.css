@@ -1,15 +1,19 @@
 .Product {
     display: flex;
     flex-direction: column;
-    border-radius: 20px 70px 20px 70px;
+    /* border-radius: 20px 70px 20px 70px; */
+    border-radius: 0px 0px 20px 0px;
+    
     /* border-radius: 20px; */
     aspect-ratio: 1 / 1;
     width: 50%;
-    max-width: 250px;
+    max-width: 300px;
     margin: 10px;
     font-size: 16px;
     transition: transform 250ms;
-    box-shadow: 0 4px 15px 0 rgba(211, 211, 211, 0.5);
+    /* background-color: rgba(211, 211, 211, 0.2); */
+    border: 1px solid grey;
+    /* box-shadow: 0 2px 5px 0 rgba(211, 211, 211, 0.9); */
 
 }
 
@@ -23,7 +27,7 @@
 
 .Product img{
     display: block;
-    max-height: 125px;
+    max-height: 175px;
     /* width: 100%; */
     height: auto;
     width: auto;
