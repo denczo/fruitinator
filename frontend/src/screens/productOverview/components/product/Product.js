@@ -5,6 +5,14 @@ import './Product.css';
 import Add from '../../../../navigation/buttons/add/Add';
 import { motion } from 'framer-motion';
 
+const productMotion = {
+        initial: { scale: 1 },
+        hover: { scale: 1.05 }
+}
+
+
+
+
 const Product = ({ data }) => {
 
     const { title, backgroundColor, price, image } = data;
@@ -14,11 +22,17 @@ const Product = ({ data }) => {
         store.setProduct(data)
     };
 
+
     return (<motion.div
         className="Product"
+        // variants={productMotion}
+        // whileHover={{ scale: 1.05 }}
+
         initial={{ transform: "scale(0)" }}
         animate={{ transform: "scale(1)" }}
         exit={{ transform: "scale(0)" }}
+        variants={productMotion}
+        // whileHover={{ scale: 1.05 }}
         layout={'position'}
         key={title}
         onClick={() => handleClick(data)}>
