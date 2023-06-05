@@ -5,7 +5,7 @@ import Navbar from '../../navigation/navbar/Navbar';
 import Content from '../content/Content';
 import Footer from '../footer/Footer';
 import Header from '../header/Header';
-import CarouselSlider from '../../screens/productOverview/components/CarouselSlider/CarouselSlider';
+// import CarouselSlider from '../../screens/productOverview/components/CarouselSlider/CarouselSlider';
 // import CartOverview from '../../screens/cartOverview/CartOverview';
 // import ProductInfo from '../screens/productInfo/ProductInfo';
 

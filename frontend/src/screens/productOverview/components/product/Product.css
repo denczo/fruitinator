@@ -6,8 +6,8 @@
     /* border-radius: 20px; */
     aspect-ratio: 1 / 1;
     width: 50%;
-    max-width: 300px;
-    margin: 10px;
+    max-width: 250px;
+    margin: 9px;
     font-size: 16px;
     /* transition: transform 250ms; */
     /* background-color: rgba(211, 211, 211, 0.2); */
@@ -22,7 +22,7 @@
 
 .Product img{
     display: block;
-    max-height: 175px;
+    max-height: 125px;
     /* width: 100%; */
     height: auto;
     width: auto;

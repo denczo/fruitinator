@@ -24,7 +24,7 @@ const CarouselSlider = () => {
         <div className="slideshowSlider" style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}>
             {sliderData.map((image, index) => (
                 // <div className="slide" key={index} >
-                <img  className="slide" key={index} src={image.image} ></img>
+                <img  className="slide" key={index} src={image.image} alt={index}></img>
                 // </div>
             ))}    </div>
     </div>);

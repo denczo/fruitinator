@@ -15,7 +15,7 @@ const productMotion = {
 
 const Product = ({ data }) => {
 
-    const { title, backgroundColor, price, image } = data;
+    const { title, price, image } = data;
     const navigate = useNavigate()
     const handleClick = (data) => {
         navigate('/info')

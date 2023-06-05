@@ -2,14 +2,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 1200px;
+    max-width: 1080px;
 }
 
 #AnimatePresence {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 1200px;
+    max-width: 1080px;
 }
 
 .motion.div{
