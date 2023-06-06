@@ -90,7 +90,7 @@ const ProductOverview = () => {
 
     return (<div className="ProductOverview">
         {/* <CarouselSlider /> */}
-        {sortOption}
+        {/* {sortOption} */}
         <Sortbar options={options} setSelectedOption={setSortOption}/>
         <AnimatePresence>
             {sortedItems.map((product, index) =>

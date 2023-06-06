@@ -25,7 +25,6 @@
     height: 20px;
     border: 5px solid #9b9b9b;
     border-top: 0;
-    /* animation: tilt-shaking 2s infinite; */
 }
 
 .Cart:hover .Bucket{
