@@ -73,9 +73,9 @@ const ProductOverview = () => {
         }
     }
     // why doesn't it work, when filteredItems is declared outside of this component?
-    const sortedItems = sortItems(data, sortOption)
+    // const sortedItems = sortItems(data, sortOption)
     console.log("Test")
-    // let filteredItems = data.filter(product => product.title.toLowerCase().includes(store.getSearchValue().toLowerCase()));
+    let filteredItems = data.filter(product => product.title.toLowerCase().includes(store.getSearchValue().toLowerCase()));
     // let newfilteredItems = sortItems(filteredItems, sortOption);
     
     // filterItems(filtered)
@@ -93,7 +93,7 @@ const ProductOverview = () => {
         {/* {sortOption} */}
         <Sortbar options={options} setSelectedOption={setSortOption}/>
         <AnimatePresence>
-            {sortedItems.map((product, index) =>
+            {filteredItems.map((product, index) =>
                 <Product key={index} data={product} /> 
             )}
         </AnimatePresence>
