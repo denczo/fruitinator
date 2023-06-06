@@ -11,8 +11,6 @@
     margin-left: 10px;
 }
 
-
-
 .heart {
     /* aspect-ratio: 1 / 1; */
     /* height: 100%; */
@@ -25,7 +23,7 @@
     margin-bottom: 10px;
     /* transform-origin: 50% 50%; */
 	transform: rotate(45deg) scale(1);
-    /* background-color: grey; */
+	/* transition: margin-bottom 0.2s ease; */
 	&:before {
 		content: "";
 		position: absolute;
@@ -37,6 +35,10 @@
 		height: 16px;
 		top: 12px;
 		left: 0;
+		-webkit-transition: background-color 0.2s ease-out;
+		-moz-transition: background-color 0.2s ease-out;
+		-o-transition: background-color 0.2s ease-out;
+		transition: background-color 0.2s ease-out;
 	}
 	&:after {
 		content: "";
@@ -49,10 +51,16 @@
 		height: inherit;
 		border-top-left-radius: 20px;
 		border-top-right-radius: 20px;
+		-webkit-transition: background-color 0.2s ease-out;
+		-moz-transition: background-color 0.2s ease-out;
+		-o-transition: background-color 0.2s ease-out;
+		transition: background-color 0.2s ease-out;
 	}
 }
 
-.heart:hover{
+.container:hover .heart{
+    animation: moveUpDown 0.5s ease-in-out infinite;
+
     &:before {
 		background-color: tomato;
 	}
@@ -60,3 +68,9 @@
 		background-color: tomato;
 	}
 }
+
+@keyframes moveUpDown {
+    0% { transform: rotate(45deg) scale(1)}
+    50% { transform: rotate(45deg) scale(1.2)}
+    100% { transform: rotate(45deg) scale(1)}
+  }

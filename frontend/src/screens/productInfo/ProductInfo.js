@@ -8,19 +8,19 @@ const ProductInfo = () => {
 
     const data = toJS(store.getProduct())
 
-return (<div className='ProductInfo'>
+    return (<div className='ProductInfo'>
         <div id='Details'>
-        <img key={data.image} alt={data.title} src={data.image}></img>
-        <Add data={{title: data.title, price: data.price, image: data.image }} />
-        <div id='Title'>
-            <h2>{data.title}</h2>
-            <h2>{'$ ' + data.price / 100}</h2>
-        </div>
-        <b>Info</b>
-        <p>{data.description}</p>
+            <img key={data.image} alt={data.title} src={data.image}></img>
+            <Add data={{ title: data.title, price: data.price, image: data.image }} />
+            <div id='Title'>
+                <h2>{data.title}</h2>
+                <h2>{'$ ' + data.price / 100}</h2>
+            </div>
+            <b>Info</b>
+            <p>{data.description}</p>
         </div>
         <table id="NutritionInfo">
-        <b>Nutrition Facts</b>
+            <tr><b>Nutrition Facts</b></tr>
             <tbody>
                 {Object.entries(data.nutritionInfo).map(([name, value]) => {
                     return <tr>

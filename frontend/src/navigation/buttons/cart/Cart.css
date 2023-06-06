@@ -28,9 +28,9 @@
     /* animation: tilt-shaking 2s infinite; */
 }
 
-.Bucket:hover{
+.Cart:hover .Bucket{
     animation: tilt-shaking 1s infinite;
-
+    border-color:#5e5e5e;
 }
 
 @keyframes tilt-shaking {

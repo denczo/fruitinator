@@ -21,11 +21,17 @@
     border: 10px solid #9b9b9b;
     border-left: 0;
     border-top: 0;
+    margin-left: 5px;
     transform: rotate(135deg);
 }
 
-.arrow:hover {
-    border: 10px solid #c1c1c1;
-    border-left: 0;
-    border-top: 0;
+.Back:hover .arrow{
+    animation: move 0.45s ease-in-out infinite;
+    border-color: #bbbbbb;
 }
+
+@keyframes move {
+    0% { transform: translateX(0px) rotate(135deg);}
+    50% { transform: translateX(-5px) rotate(135deg);}
+    100% { transform: translateX(0px) rotate(135deg);}
+  }
