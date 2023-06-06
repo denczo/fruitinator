@@ -6,7 +6,16 @@ input[type=text] {
     margin-right: 10px;
     padding: 0px 14px 0px 14px;
     border: none;
-    border-radius: 15px;
+    border-radius: 5px;
     background-color: #f3f3f3;
     color: rgb(200, 200, 200);
+    -webkit-transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
   }
+
+input:focus{
+    outline: none;
+    background-color: #fdfdfd;
+}

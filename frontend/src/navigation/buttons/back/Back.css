@@ -1,7 +1,8 @@
 .Back{
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: #f3f3f3;
     aspect-ratio: 1 / 1;
+    height: 100%;
     text-align: center;
     display: flex;      
     justify-content: center;
@@ -9,9 +10,10 @@
     cursor: pointer;
 }
 
-.Back:hover{
+/* .Back:hover{
     border: 3px solid #707070;
-}
+    outline-offset: -3px;
+} */
 
 .arrow {
     width: 15px;
@@ -20,4 +22,10 @@
     border-left: 0;
     border-top: 0;
     transform: rotate(135deg);
+}
+
+.arrow:hover {
+    border: 10px solid #c1c1c1;
+    border-left: 0;
+    border-top: 0;
 }

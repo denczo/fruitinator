@@ -1,16 +1,18 @@
 .Cart {
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: #f3f3f3;
     aspect-ratio: 1 / 1;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
 }
 
-.Cart:hover {
+/* .Cart:hover {
     border: 3px solid #707070;
-}
+    outline-offset: -3px;
+} */
 
 .Cart img {
     max-width: 100%;
@@ -24,6 +26,11 @@
     border: 5px solid #9b9b9b;
     border-top: 0;
     /* animation: tilt-shaking 2s infinite; */
+}
+
+.Bucket:hover{
+    animation: tilt-shaking 1s infinite;
+
 }
 
 @keyframes tilt-shaking {

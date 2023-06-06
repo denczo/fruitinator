@@ -4,6 +4,7 @@ import store from "../../../../stores/Store"
 import './Product.css';
 import Add from '../../../../navigation/buttons/add/Add';
 import { motion } from 'framer-motion';
+import Favorites from '../../../../navigation/buttons/favorites/Favorites';
 
 const productMotion = {
         initial: { scale: 1 },

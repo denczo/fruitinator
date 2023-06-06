@@ -3,6 +3,7 @@ import './Navbar.css';
 import Searchbar from '../searchbar/Searchbar';
 import Back from '../buttons/back/Back';
 import Cart from '../buttons/cart/Cart';
+import Favorites from '../buttons/favorites/Favorites';
 
 
 const Navbar = () => {
@@ -10,6 +11,7 @@ const Navbar = () => {
         <Back/>
         <Searchbar/>
         <Cart/>
+        <Favorites/>
     </div>);
 }
 
