@@ -1,12 +1,9 @@
 .ProductInfo {
     display: flex;
-    /* flex-direction: column; */
-    /* background-color: aqua; */
     max-width: 800px;
     padding: 5px;
     height: auto;
     flex-shrink: 2;
-
 }
 
 #Title{
@@ -32,7 +29,6 @@
     background-color: #dadada;
     color: white;
 }
-
 
 #Details{
     width: 50%;

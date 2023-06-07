@@ -12,18 +12,10 @@
 }
 
 .heart {
-    /* aspect-ratio: 1 / 1; */
-    /* height: 100%; */
-    /* width: 100%; */
    	width: 28px;
 	height: 28px;
-    /* padding: 10px; */
-	/* position: relative; */
-	/* margin: 1em auto; */
     margin-bottom: 10px;
-    /* transform-origin: 50% 50%; */
 	transform: rotate(45deg) scale(1);
-	/* transition: margin-bottom 0.2s ease; */
 	&:before {
 		content: "";
 		position: absolute;

@@ -9,11 +9,6 @@
     cursor: pointer;
 }
 
-/* .Cart:hover {
-    border: 3px solid #707070;
-    outline-offset: -3px;
-} */
-
 .Cart img {
     max-width: 100%;
     height: auto;

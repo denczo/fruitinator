@@ -23,28 +23,6 @@ function sortAscending (a, b){
     return 0; //default return value (no sorting)
 }
 
-function sortItems(items, sortOption){
-    switch(sortOption){
-        case 0:
-            console.log("OPTION 0")
-            return items;
-        case 1: 
-            console.log("OPTION 1")
-            return items.sort((a, b) => sortAscending(a.title.toLowerCase(), b.title.toLowerCase()));
-        case 2:
-            console.log("OPTION 2")
-            return items.sort((a, b) => sortAscending(a.title.toLowerCase(), b.title.toLowerCase())).reverse();
-        case 3:
-            console.log("OPTION 3")
-            return items.sort((a, b) => sortAscending(a.price, b.price));
-        case 4:
-            console.log("OPTION 4")
-            return items.sort((a, b) => sortAscending(a.price, b.price)).reverse();
-        default:
-            return items;
-    }
-}
-
 
 const ProductOverview = () => {
 
