@@ -8,7 +8,7 @@ const CartOverview = () => {
 
     let totalSum = 0;
 
-    return (<div className="CartOverview">
+    return (<div>
         {store.getCartCount() > 0 ? (
             <>
                 <h2 style={{ textAlign: 'center' }}>Cart Overview</h2>
@@ -28,7 +28,7 @@ const CartOverview = () => {
                 </table>
                 <h2 style={{ textAlign: 'right' }}>Order total: {totalSum.toFixed(2)} $</h2>
                 <p style={{ textAlign: 'right' }}>Excluding shipping costs</p>
-            </>) : (<h3 style={{ textAlign: 'center' }}>Your cart is empty</h3>)}
+            </>) : (<h3>Your cart is empty</h3>)}
     </div>);
 }
 

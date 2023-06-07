@@ -11,6 +11,6 @@
     min-height: 200px;
     height: 100%;
     text-align: center;
-    position: sticky;
+    /* position: sticky; */
     top: 100vh;
 }
