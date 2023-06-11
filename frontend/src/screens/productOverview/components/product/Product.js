@@ -5,11 +5,6 @@ import './Product.css';
 import Add from '../../../../navigation/buttons/add/Add';
 import { motion } from 'framer-motion';
 
-const productMotion = {
-        initial: { scale: 1 },
-        hover: { scale: 1.05 }
-}
-
 const Product = ({ data }) => {
 
     const { title, price, image } = data;
@@ -20,25 +15,26 @@ const Product = ({ data }) => {
     };
 
     return (<motion.div
-        className="Product"
-        // variants={productMotion}
-        // whileHover={{ scale: 1.05 }}
-
+        className="ProductContainer"
         initial={{ transform: "scale(0)" }}
         animate={{ transform: "scale(1)" }}
         exit={{ transform: "scale(0)" }}
-        variants={productMotion}
-        // whileHover={{ scale: 1.05 }}
+        transition={{ duration: 0.2 }}
         layout={'position'}
         key={title}
-        onClick={() => handleClick(data)}>
-        <div className='ProductContent'>
-            <div><b>{title}</b></div>
-            <div><b>{'$ ' + price / 100}</b></div>
-            <img key={title} src={image} alt=""></img>
-        </div>
-        <Add data={{ title, price, image }} />
-    </motion.div>);
+        >
+            <motion.div
+                className="Product"
+                whileHover={{ scale: 1.05 }}
+                onClick={() => handleClick(data)}>
+                <div className='ProductContent'>
+                    <div><b>{title}</b></div>
+                    <div><b>{'$ ' + price / 100}</b></div>
+                    <img key={title} src={image} alt=""></img>
+                </div>
+                <Add data={{ title, price, image }} />
+            </motion.div>
+        </motion.div>);
 }
 
 export default Product;

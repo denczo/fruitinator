@@ -5,7 +5,7 @@ import store from "../../stores/Store"
 
 const Searchbar = () => {
     return (
-        <input type="text" placeholder="Search" onClick={() => store.setSearchValue("")} onChange={(e) => store.setSearchValue(e.target.value)} value={store.getSearchValue()} />
+        <input type="text" placeholder="Search for your favorite fruits" onClick={() => store.setSearchValue("")} onChange={(e) => store.setSearchValue(e.target.value)} value={store.getSearchValue()} />
     );
 }
 

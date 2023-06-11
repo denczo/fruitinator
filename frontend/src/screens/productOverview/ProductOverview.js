@@ -23,55 +23,35 @@ function sortAscending (a, b){
     return 0; //default return value (no sorting)
 }
 
+function sortItems (items, sortOption){
+    switch(Number(sortOption)){
+        case 0:
+            return items;
+        case 1: 
+            return items.sort((a, b) => sortAscending(a.title.toLowerCase(), b.title.toLowerCase()));
+        case 2:
+            return items.sort((a, b) => sortAscending(a.title.toLowerCase(), b.title.toLowerCase())).reverse();
+        case 3:
+            return items.sort((a, b) => sortAscending(a.price, b.price));
+        case 4:
+            return items.sort((a, b) => sortAscending(a.price, b.price)).reverse();
+        default:
+            return items;
+    }
+}
 
 const ProductOverview = () => {
 
     const [sortOption, setSortOption] = useState(0);
-    // const [filteredItems, filterItems] = useState([])
-
-    const sortItems =  (items, sortOption) => {
-        switch(sortOption){
-            case 0:
-                console.log("OPTION 0")
-                return items;
-            case 1: 
-                console.log("OPTION 1")
-                return items.sort((a, b) => sortAscending(a.title.toLowerCase(), b.title.toLowerCase()));
-            case 2:
-                console.log("OPTION 2")
-                return items.sort((a, b) => sortAscending(a.title.toLowerCase(), b.title.toLowerCase())).reverse();
-            case 3:
-                console.log("OPTION 3")
-                return items.sort((a, b) => sortAscending(a.price, b.price));
-            case 4:
-                console.log("OPTION 4")
-                return items.sort((a, b) => sortAscending(a.price, b.price)).reverse();
-            default:
-                return items;
-        }
-    }
     // why doesn't it work, when filteredItems is declared outside of this component?
-    // const sortedItems = sortItems(data, sortOption)
-    console.log("Test")
     let filteredItems = data.filter(product => product.title.toLowerCase().includes(store.getSearchValue().toLowerCase()));
-    // let newfilteredItems = sortItems(filteredItems, sortOption);
+    let sortedItems = sortItems(filteredItems, sortOption);
     
-    // filterItems(filtered)
-    // let sorted = sortItems(filteredItems, sortOption);
-    // filterItems(sorted)
-
-    // useEffect(() => {
-    //     let sorted = sortItems(filteredItems, sortOption);
-    //     filterItems(sorted)
-    //     console.log("Triggered")
-    // }, [sortOption])
-
     return (<div className="ProductOverview">
         {/* <CarouselSlider /> */}
-        {/* {sortOption} */}
         <Sortbar options={options} setSelectedOption={setSortOption}/>
         <AnimatePresence>
-            {filteredItems.map((product, index) =>
+            {sortedItems.map((product, index) =>
                 <Product key={index} data={product} /> 
             )}
         </AnimatePresence>
