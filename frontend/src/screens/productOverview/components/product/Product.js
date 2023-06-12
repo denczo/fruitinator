@@ -28,6 +28,7 @@ const Product = ({ data }) => {
             <motion.div
                 className="Product"
                 whileHover={{ scale: 1.05 }}
+                layout                    
                 onClick={() => handleClick(data)}>
                 <div id='FavoritesPlacement'>
                     <Favorites />

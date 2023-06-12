@@ -34,7 +34,11 @@
 } */
 #FavoritesPlacement{
 	position: absolute;
-	right: 0;
+	/* left: 70%; */
+    /* transform: translate(-50%,-50%); */
+    /* right: 0%; */
+    margin-left: 195px;
+    /* top: 0%; */
     padding: 10px;
 }
 
