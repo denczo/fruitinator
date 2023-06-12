@@ -18,13 +18,13 @@
     text-align: center;
     width: 20px;
     height: 20px;
-    border: 5px solid #9b9b9b;
+    border: 5px solid #c2c2c2;
     border-top: 0;
 }
 
 .Cart:hover .Bucket{
     animation: tilt-shaking 1s infinite;
-    border-color:#5e5e5e;
+    border-color:#9b9b9b;
 }
 
 @keyframes tilt-shaking {
