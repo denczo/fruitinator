@@ -34,7 +34,7 @@ const Product = ({ data }) => {
                 </div>
                 <div className='ProductContent'>
                     <div><b>{title}</b></div>
-                    <div><b>{'$ ' + price / 100}</b></div>
+                    <div style={{fontSize: 20}}><b>{'$ ' + price / 100}</b></div>
                     <img key={title} src={image} alt=""></img>
                 </div>
                 <Add data={{ title, price, image }} />

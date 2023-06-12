@@ -27,7 +27,7 @@
 		display: block;
 		border-top-left-radius: 20px;
 		border-bottom-left-radius: 20px;
-		background-color: grey;
+		background-color: #c2c2c2;
 		width: inherit;
 		height: 16px;
 		top: 12px;
@@ -41,7 +41,7 @@
 		content: "";
 		position: absolute;
 		display: block;
-		background-color: grey;
+		background-color: #c2c2c2;
 		width: 16px;
 		top: 0;
 		left: 12px;
