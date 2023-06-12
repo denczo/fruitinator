@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/webshop/static/css/main.9b689bdc.css",
-    "main.js": "/webshop/static/js/main.600aca66.js",
+    "main.css": "/webshop/static/css/main.52e11a7f.css",
+    "main.js": "/webshop/static/js/main.e9663c10.js",
     "static/js/787.5227fab7.chunk.js": "/webshop/static/js/787.5227fab7.chunk.js",
-    "static/media/passionfruit.png": "/webshop/static/media/passionfruit.e60e52cf289a8ee44046.png",
-    "static/media/pear.png": "/webshop/static/media/pear.b38848c1480f37706ed8.png",
-    "static/media/cherry.png": "/webshop/static/media/cherry.ed09ff3b795b063fe6f3.png",
-    "static/media/pineapple.png": "/webshop/static/media/pineapple.5f07e908fea7396cab0e.png",
-    "static/media/blueberry.png": "/webshop/static/media/blueberry.81b1f3b62cb0c4e7b7a9.png",
-    "static/media/mango.png": "/webshop/static/media/mango.635e56adb23408c40215.png",
+    "static/media/pear.png": "/webshop/static/media/pear.cae5b85948a1b6076a55.png",
+    "static/media/passionfruit.png": "/webshop/static/media/passionfruit.964354e9179872789fb5.png",
+    "static/media/cherry.png": "/webshop/static/media/cherry.09f8df79bd285b038468.png",
+    "static/media/pineapple.png": "/webshop/static/media/pineapple.2c1de93b1b9b77c5887d.png",
+    "static/media/mango.png": "/webshop/static/media/mango.7ca7a049729c97042910.png",
+    "static/media/blueberry.png": "/webshop/static/media/blueberry.f91c43dc9e1fc8fd3aa5.png",
     "index.html": "/webshop/index.html",
-    "main.9b689bdc.css.map": "/webshop/static/css/main.9b689bdc.css.map",
-    "main.600aca66.js.map": "/webshop/static/js/main.600aca66.js.map",
+    "main.52e11a7f.css.map": "/webshop/static/css/main.52e11a7f.css.map",
+    "main.e9663c10.js.map": "/webshop/static/js/main.e9663c10.js.map",
     "787.5227fab7.chunk.js.map": "/webshop/static/js/787.5227fab7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b689bdc.css",
-    "static/js/main.600aca66.js"
+    "static/css/main.52e11a7f.css",
+    "static/js/main.e9663c10.js"
   ]
 }
