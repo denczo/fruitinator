@@ -10,7 +10,9 @@ const Navbar = () => {
         <Back/>
         <Searchbar/>
         <Cart/>
+        <div id='FavoritesNavbarPlacement'>
         <Favorites/>
+        </div>
     </div>);
 }
 

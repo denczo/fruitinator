@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import store from "../../../../stores/Store"
 import './Product.css';
 import Add from '../../../../navigation/buttons/add/Add';
+import Favorites from '../../../../navigation/buttons/favorites/Favorites';
+
 import { motion } from 'framer-motion';
 
 const Product = ({ data }) => {
@@ -27,6 +29,9 @@ const Product = ({ data }) => {
                 className="Product"
                 whileHover={{ scale: 1.05 }}
                 onClick={() => handleClick(data)}>
+                <div id='FavoritesPlacement'>
+                    <Favorites />
+                </div>
                 <div className='ProductContent'>
                     <div><b>{title}</b></div>
                     <div><b>{'$ ' + price / 100}</b></div>

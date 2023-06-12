@@ -9,11 +9,11 @@ import { AnimatePresence } from 'framer-motion';
 import Sortbar from '../../navigation/sortbar/Sortbar';
 
 const options = [
-    { value: 0, label: "default"},
-    { value: 1, label: "asc alphabetical"},
-    { value: 2, label: "desc alphabetical"},
-    { value: 3, label: "asc price"},
-    { value: 4, label: "desc price"}]
+    { value: 0, label: "Relevancy"},
+    { value: 1, label: "Title: A - Z"},
+    { value: 2, label: "Title: Z - A"},
+    { value: 3, label: "Price: Low - High"},
+    { value: 4, label: "Price: High - Low"}]
 
 function sortAscending (a, b){
     if (a < b) //sort string ascending
