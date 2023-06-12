@@ -1,8 +1,8 @@
 {
-  "name": "webshop",
+  "name": "fruitinator",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://denczo.github.io/webshop/",
+  "homepage": "https://denczo.github.io/fruitinator/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
