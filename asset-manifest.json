@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/webshop/static/css/main.52e11a7f.css",
-    "main.js": "/webshop/static/js/main.e9663c10.js",
-    "static/js/787.5227fab7.chunk.js": "/webshop/static/js/787.5227fab7.chunk.js",
-    "static/media/pear.png": "/webshop/static/media/pear.cae5b85948a1b6076a55.png",
-    "static/media/passionfruit.png": "/webshop/static/media/passionfruit.964354e9179872789fb5.png",
-    "static/media/cherry.png": "/webshop/static/media/cherry.09f8df79bd285b038468.png",
-    "static/media/pineapple.png": "/webshop/static/media/pineapple.2c1de93b1b9b77c5887d.png",
-    "static/media/mango.png": "/webshop/static/media/mango.7ca7a049729c97042910.png",
-    "static/media/blueberry.png": "/webshop/static/media/blueberry.f91c43dc9e1fc8fd3aa5.png",
-    "index.html": "/webshop/index.html",
-    "main.52e11a7f.css.map": "/webshop/static/css/main.52e11a7f.css.map",
-    "main.e9663c10.js.map": "/webshop/static/js/main.e9663c10.js.map",
-    "787.5227fab7.chunk.js.map": "/webshop/static/js/787.5227fab7.chunk.js.map"
+    "main.css": "/fruitinator/static/css/main.4f072a77.css",
+    "main.js": "/fruitinator/static/js/main.c2b61695.js",
+    "static/js/787.41f1ed26.chunk.js": "/fruitinator/static/js/787.41f1ed26.chunk.js",
+    "static/media/pear.png": "/fruitinator/static/media/pear.cae5b85948a1b6076a55.png",
+    "static/media/passionfruit.png": "/fruitinator/static/media/passionfruit.964354e9179872789fb5.png",
+    "static/media/cherry.png": "/fruitinator/static/media/cherry.09f8df79bd285b038468.png",
+    "static/media/pineapple.png": "/fruitinator/static/media/pineapple.2c1de93b1b9b77c5887d.png",
+    "static/media/mango.png": "/fruitinator/static/media/mango.7ca7a049729c97042910.png",
+    "static/media/blueberry.png": "/fruitinator/static/media/blueberry.f91c43dc9e1fc8fd3aa5.png",
+    "index.html": "/fruitinator/index.html",
+    "main.4f072a77.css.map": "/fruitinator/static/css/main.4f072a77.css.map",
+    "main.c2b61695.js.map": "/fruitinator/static/js/main.c2b61695.js.map",
+    "787.41f1ed26.chunk.js.map": "/fruitinator/static/js/787.41f1ed26.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.52e11a7f.css",
-    "static/js/main.e9663c10.js"
+    "static/css/main.4f072a77.css",
+    "static/js/main.c2b61695.js"
   ]
 }
