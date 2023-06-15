@@ -1,34 +1,51 @@
 .Stepper{
     display: flex;
-    flex-direction: column;
-    max-width: 40px;
-    margin: auto;
+    align-items: center;
 }
 
 #Plus{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    aspect-ratio: 1 / 1;
-    background-color: #dfdfdf;
-    padding: 2px;
-    border-radius: 10px;
+    width: 15px;
+    height: 15px;
+    border: 5px solid #c2c2c2;
+    border-left: 0;
+    border-top: 0;
+    /* margin-left: 5px; */
+    transform: rotate(315deg);
     cursor: pointer;
 }
 
+
+#Plus:hover{
+    width: 15px;
+    height: 15px;
+    border: 5px solid #a3a3a3;
+    border-left: 0;
+    border-top: 0;
+}
+
+
+
 #Minus{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    aspect-ratio: 1 / 1;
-    background-color: #dfdfdf;
-    padding: 2px;
-    border-radius: 10px;
+    width: 15px;
+    height: 15px;
+    border: 5px solid #c2c2c2;
+    border-left: 0;
+    border-top: 0;
+    /* margin-left: 5px; */
+    transform: rotate(135deg);
     cursor: pointer;
+}
+
+#Minus:hover{
+    width: 15px;
+    height: 15px;
+    border: 5px solid #a3a3a3;
+    border-left: 0;
+    border-top: 0;
 }
 
 #Indicator{
     display: flex;
-    padding: 10px;
-    justify-content: center;
+    padding: 0px 5px 0px 5px;
+    align-items: center;
 }

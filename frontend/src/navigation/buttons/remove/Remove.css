@@ -1,15 +1,49 @@
-.Remove{
-    background-color: #d4d4d4;
-    aspect-ratio: 1 / 1;
-    border-radius: 20px 0px 20px 0px;
-    /* min-width: 40px; */
-    padding: 15px;
-    text-align: center;
-    align-self: flex-end;
-    margin-top: auto;
+.Remove {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    transform: scale(0.8);
     cursor: pointer;
+
+    &:before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 15px;
+        height: 15px;
+        border: 5px solid #c2c2c2;
+        border-left: 0;
+        border-top: 0;
+        margin-left: 21px;
+        transform: rotate(135deg);
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 15px;
+        height: 15px;
+        border: 5px solid #c2c2c2;
+        border-left: 0;
+        border-top: 0;
+        margin-right: 21px;
+        transform: rotate(315deg);
+    }
 }
 
 .Remove:hover{
-    background-color: #c2c2c2;
+
+    &:before {
+        border: 5px solid tomato;
+        border-left: 0;
+        border-top: 0;
+	}
+	&:after {
+        border: 5px solid tomato;
+        border-left: 0;
+        border-top: 0;
+	}
 }

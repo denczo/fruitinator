@@ -5,6 +5,7 @@ class Store {
     selectedProduct = "";
     searchValue = ""
     cart = []
+    favorites = []
 
     constructor() {
         makeAutoObservable(this);
@@ -44,6 +45,10 @@ class Store {
                 return element;
             }
         }).filter((element) => element.amount > 0)
+    }
+
+    deleteItemFromCart(name){
+        this.cart = this.cart.filter((element) => element.name !== name)
     }
 
     addItemToCart({ data }) {
