@@ -7,7 +7,7 @@ import Favorites from '../buttons/favorites/Favorites';
 
 const Navbar = () => {
     return (<div className='Navbar'>
-        <Back/>
+        {/* <Back/> */}
         <Searchbar/>
         <Cart/>
         <div id='FavoritesNavbarPlacement'>

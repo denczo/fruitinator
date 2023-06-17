@@ -34,8 +34,8 @@ const CartOverview = () => {
                         </motion.div>
                     })}
                 </div>
-                <h2 style={{ textAlign: 'right' }}>Order total: {totalSum.toFixed(2)} $</h2>
-                <p style={{ textAlign: 'right' }}>Excluding shipping costs</p>
+                <h2 style={{ textAlign: 'right', marginRight: '5px' }}>Order total: {totalSum.toFixed(2)} $</h2>
+                <p style={{ textAlign: 'right', marginRight: '5px' }}>Excluding shipping costs</p>
             </>) : (<h3 style={{ textAlign: 'center' }}>Your cart is empty</h3>)}
     </div>);
 }
