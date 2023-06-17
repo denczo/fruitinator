@@ -3,9 +3,10 @@ import { makeAutoObservable } from "mobx"
 class Store {
 
     selectedProduct = "";
-    searchValue = ""
-    cart = []
-    favorites = []
+    searchValue = "";
+    sortOption = 0;
+    cart = [];
+    favorites = [];
 
     constructor() {
         makeAutoObservable(this);
@@ -23,6 +24,14 @@ class Store {
 
     setSearchValue(value) {
         this.searchValue = value;
+    }
+
+    getSortOption(){
+        return this.sortOption;
+    }
+
+    setSortOption(value){
+        this.sortOption = value;
     }
 
     increaseItemAmount(name) {
