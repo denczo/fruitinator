@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import store from "../../../../stores/Store"
-import './Product.css';
+import './Product.sass';
 import Add from '../../../../navigation/buttons/add/Add';
 import Favorites from '../../../../navigation/buttons/favorites/Favorites';
 

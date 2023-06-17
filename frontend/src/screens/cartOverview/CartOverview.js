@@ -1,6 +1,6 @@
 import React from 'react';
 import store from "../../stores/Store"
-import './CartOverview.css';
+import './CartOverview.sass';
 import Stepper from '../../navigation/stepper/Stepper';
 import { observer } from "mobx-react";
 import Remove from '../../navigation/buttons/remove/Remove';

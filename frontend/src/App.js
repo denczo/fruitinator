@@ -1,4 +1,4 @@
-import './App.css';
+import './App.sass';
 import Wrapper from './structure/wrapper/Wrapper';
 
 function App() {

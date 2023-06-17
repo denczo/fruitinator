@@ -1,5 +1,5 @@
 import React from 'react';
-import './Stepper.css';
+import './Stepper.sass';
 import store from "../../stores/Store"
 
 const Stepper = ({data}) => {

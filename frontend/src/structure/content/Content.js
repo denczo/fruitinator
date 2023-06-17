@@ -1,5 +1,5 @@
 import React from 'react';
-import './Content.css';
+import './Content.sass';
 import {Route, Routes} from 'react-router-dom';
 import ProductOverview from '../../screens/productOverview/ProductOverview';
 import ProductInfo from '../../screens/productInfo/ProductInfo';

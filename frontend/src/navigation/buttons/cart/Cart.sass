@@ -1,0 +1,72 @@
+.Cart
+    border-radius: 5px
+    background-color: #f3f3f3
+    aspect-ratio: 1 / 1
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+
+.Cart img
+    max-width: 100%
+    height: auto
+
+.Bucket
+    text-align: center
+    width: 20px
+    height: 20px
+    border: 5px solid #c2c2c2
+    border-top: 0
+
+.Cart:hover .Bucket
+    animation: tilt-shaking 1s infinite
+    border-color: #9b9b9b
+
+@keyframes tilt-shaking
+    0%  
+        transform: rotate(0deg)
+    5%  
+        transform: rotate(10deg)
+    10% 
+        transform: rotate(0eg)
+    15% 
+        transform: rotate(-10deg)
+    20% 
+        transform: rotate(0deg)
+    100%
+        transform: rotate(0deg)
+
+.CircleAnimation
+    width: 20px
+    height: 20px
+    border-radius: 20px
+    font-weight: bold
+    -webkit-animation: grow 0.5s
+
+@keyframes grow
+    0%
+        -webkit-transform: scale(1)
+        -moz-transform: scale(1)
+        -o-transform: scale(1)
+        -ms-transform: scale(1)
+        transform: scale(1)
+        background-color: red
+        color: white
+        opacity: 1
+
+    75%
+        -webkit-transform: scale(3)
+        -moz-transform: scale(3)
+        -o-transform: scale(3)
+        -ms-transform: scale(3)
+        transform: scale(3)
+        opacity: 0
+
+    100%
+        -webkit-transform: scale(1)
+        -moz-transform: scale(1)
+        -o-transform: scale(1)
+        -ms-transform: scale(1)
+        transform: scale(1)
+        color: black

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Favorites.css';
+import './Favorites.sass';
 
 const Favorites = () => {
     return (<div className="container">

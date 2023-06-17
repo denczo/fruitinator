@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css';
+import './Footer.sass';
 import SocialMedia from '../../navigation/socialmedia/SocialMedia';
 import Logo from '../logo/Logo';
 

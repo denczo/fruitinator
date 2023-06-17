@@ -1,5 +1,5 @@
 import React from 'react';
-import './SocialMedia.css';
+import './SocialMedia.sass';
 import { SocialIcon } from 'react-social-icons';
 
 const socialMedia = [

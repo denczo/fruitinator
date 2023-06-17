@@ -1,5 +1,5 @@
 import React from 'react';
-import './Cart.css';
+import './Cart.sass';
 import { observer } from "mobx-react";
 import { useNavigate } from "react-router-dom"
 import store from "../../../stores/Store"

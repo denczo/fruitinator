@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './CarouselSlider.css';
+import './CarouselSlider.sass';
 import sliderData from '../../../../mockData/sliderData';
 
 

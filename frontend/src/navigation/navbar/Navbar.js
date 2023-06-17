@@ -1,5 +1,5 @@
 import React from 'react';
-import './Navbar.css';
+import './Navbar.sass';
 import Searchbar from '../searchbar/Searchbar';
 import Back from '../buttons/back/Back';
 import Cart from '../buttons/cart/Cart';

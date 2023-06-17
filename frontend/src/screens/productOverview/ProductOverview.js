@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './ProductOverview.css';
+import './ProductOverview.sass';
 import data from '../../mockData/data';
 import Product from './components/product/Product';
 import { observer } from "mobx-react";

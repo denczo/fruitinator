@@ -1,5 +1,5 @@
 import React from 'react';
-import './Remove.css';
+import './Remove.sass';
 import store from "../../../stores/Store"
 
 const Remove = ({data}) => {

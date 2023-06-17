@@ -1,5 +1,5 @@
 import React from 'react';
-import './Sortbar.css';
+import './Sortbar.sass';
 
 const Sortbar = ({options, setSelectedOption }) => {
 

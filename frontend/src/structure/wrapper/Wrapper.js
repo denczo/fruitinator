@@ -1,5 +1,5 @@
 import React from 'react';
-import './Wrapper.css';
+import './Wrapper.sass';
 import {HashRouter as Router} from 'react-router-dom';
 import Navbar from '../../navigation/navbar/Navbar';
 import Content from '../content/Content';

@@ -1,5 +1,5 @@
 import React from 'react';
-import './ProductInfo.css';
+import './ProductInfo.sass';
 import { toJS } from 'mobx'
 import store from "../../stores/Store"
 import Add from '../../navigation/buttons/add/Add';

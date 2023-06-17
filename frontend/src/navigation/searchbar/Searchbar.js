@@ -1,5 +1,5 @@
 import React from 'react';
-import './Searchbar.css';
+import './Searchbar.sass';
 import { observer } from "mobx-react";
 import store from "../../stores/Store"
 

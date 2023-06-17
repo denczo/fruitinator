@@ -1,5 +1,5 @@
 import React from 'react';
-import './Add.css';
+import './Add.sass';
 import store from "../../../stores/Store"
 
 const Add = (data) => {
