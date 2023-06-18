@@ -1,6 +1,6 @@
 import React from 'react';
 import './Wrapper.sass';
-import {HashRouter as Router} from 'react-router-dom';
+import {HashRouter as Router, useLocation} from 'react-router-dom';
 import Navbar from '../../navigation/navbar/Navbar';
 import Content from '../content/Content';
 import Footer from '../footer/Footer';
@@ -17,6 +17,7 @@ const options = [
     { value: 4, label: "Price: High - Low" }]
 
 const Wrapper = () => {
+
     return (<div className="Wrapper">
         <Router>
             <Header/>

@@ -41,9 +41,10 @@ const ProductOverview = () => {
     return (<div className="ProductOverview">
         {/* <CarouselSlider /> */}
         <AnimatePresence>
-            {sortedItems.map((product, index) =>
+            {sortedItems.length > 0 ?
+            sortedItems.map((product, index) =>
                 <Product key={index} data={product} />
-            )}
+            ) : <h3>Nothing found</h3>}
         </AnimatePresence>
     </div>);
 }

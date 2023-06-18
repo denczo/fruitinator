@@ -8,6 +8,7 @@
 #Title
     display: flex
     justify-content: space-between
+    margin-bottom: 20px
 
 #ProductImage
     min-width: 50%
@@ -17,28 +18,56 @@
     margin: auto
     width: 90%
     height: auto
+    margin-bottom: 10px
 
-.NutritionInfo th
-    padding-top: 12px
-    padding-bottom: 12px
-    text-align: left
-    background-color: #dadada
-    color: white
+.ph
+    font-size: x-large
+    font-weight: bold
+    margin-bottom: 5px
+
+
+#NutritionInfo
+    display: flex
+    flex-direction: column
+    padding: 0px 10px 0px 10px
+    width: 90%
+
+#NutritionInfo .row
+  height: 50px
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+#NutritionInfo .row .cell
+    width: 100%
+    display: flex
+    margin-left: 5px
+
+#NutritionInfo .row:nth-child(even)
+  background-color: #f3f3f3
 
 #Details
     width: 50%
+    padding: 0px 10px
 
-#NutritionInfo
-    border-collapse: collapse
-    width: 48%
-    margin-left: 2%
 
-#NutritionInfo td, #NutritionInfo th
-    /* border: 1px solid #ddd; */
-    padding: 5px
+@media screen and (max-width: 600px)
+    .ProductInfo
+        display: flex
+        flex-direction: column
 
-#NutritionInfo tr:nth-child(even)
-    background-color: #f3f3f3
+    #Details
+        width: 100%
 
-#NutritionInfo td img
-    max-height: 50px
+    #NutritionInfo
+        width: auto
+    
+    #Title
+        flex-direction: column
+        align-items: center
+        padding: 0px 20px 0px 0px
+
+    .ph
+        text-align: center
+        margin-bottom: 10px
