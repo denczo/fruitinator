@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/fruitinator/static/css/main.74f71ebc.css",
-    "main.js": "/fruitinator/static/js/main.210b5e05.js",
+    "main.css": "/fruitinator/static/css/main.8fc86a00.css",
+    "main.js": "/fruitinator/static/js/main.8dcb8ca4.js",
     "static/js/787.41f1ed26.chunk.js": "/fruitinator/static/js/787.41f1ed26.chunk.js",
     "static/media/pear.png": "/fruitinator/static/media/pear.cae5b85948a1b6076a55.png",
     "static/media/passionfruit.png": "/fruitinator/static/media/passionfruit.964354e9179872789fb5.png",
@@ -10,12 +10,12 @@
     "static/media/mango.png": "/fruitinator/static/media/mango.7ca7a049729c97042910.png",
     "static/media/blueberry.png": "/fruitinator/static/media/blueberry.f91c43dc9e1fc8fd3aa5.png",
     "index.html": "/fruitinator/index.html",
-    "main.74f71ebc.css.map": "/fruitinator/static/css/main.74f71ebc.css.map",
-    "main.210b5e05.js.map": "/fruitinator/static/js/main.210b5e05.js.map",
+    "main.8fc86a00.css.map": "/fruitinator/static/css/main.8fc86a00.css.map",
+    "main.8dcb8ca4.js.map": "/fruitinator/static/js/main.8dcb8ca4.js.map",
     "787.41f1ed26.chunk.js.map": "/fruitinator/static/js/787.41f1ed26.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.74f71ebc.css",
-    "static/js/main.210b5e05.js"
+    "static/css/main.8fc86a00.css",
+    "static/js/main.8dcb8ca4.js"
   ]
 }
