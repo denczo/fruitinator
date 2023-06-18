@@ -4,8 +4,7 @@ An example frontend for e-commerce, built with React and Javascript which suppor
 
 ![Desktop View](frontend/public/DesktopView.jpg?raw=true "Desktop View")
 
-![Mobile View](frontend/public/MobileView.jpg?raw=true "Mobile View")
-
+![Mobile View](frontend/public/MobileViewCart.jpg?raw=true "Mobile View") ![Mobile View](frontend/public/MobileViewOverview.jpg?raw=true "Mobile View")
 
 ## Key features:
 
