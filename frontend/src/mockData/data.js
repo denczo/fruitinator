@@ -1,9 +1,9 @@
-import bb from "./images/blueberry.png";
-import cherry from "./images/cherry.png";
-import mango from "./images/mango.png";
-import pf from "./images/passionfruit.png";
-import pear from "./images/pear.png";
-import pa from "./images/pineapple.png";
+import bb from "./images/blueberry.webp";
+import cherry from "./images/cherry.webp";
+import mango from "./images/mango.webp";
+import pf from "./images/passionfruit.webp";
+import pear from "./images/pear.webp";
+import pa from "./images/pineapple.webp";
 
 const data = [
     {sku: 10000, title: "Pear", weight: {value: 1, unit: "fruit"}, image: pear, backgroundColor: "#cc9900", price: 256, description: "Pears are fruits produced and consumed around the world, growing on a tree and harvested in late Summer into October.", nutritionInfo: {quantity: 100, calories: 57, fat: 0.1, cholesterol: 0, natrium: 0.001, kalium: 0.116, carbohydrates: 15, protein: 0.5}},
