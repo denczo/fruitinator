@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './ProductOverview.sass';
 import data from '../../mockData/data';
 import Product from './components/product/Product';
@@ -33,16 +33,28 @@ function sortItems(items, sortOption) {
     }
 }
 
-const ProductOverview = () => {
-    // why doesn't it work, when filteredItems is declared outside of this component?
-    let filteredItems = data.filter(product => product.title.toLowerCase().includes(store.getSearchValue().toLowerCase()));
-    let sortedItems = sortItems(filteredItems, store.getSortOption());
+async function fetchDataJSON() {
+    const response = await fetch('http://localhost:9000/product');
+    const data = await response.json();
+    return data;
+}
 
+const ProductOverview = () => {
+
+    const [sortedItems, setData] = useState([]);
+    // why doesn't it work, when filteredItems is declared outside of this component?
+    // let filteredItems = data.filter(product => product.title.toLowerCase().includes(store.getSearchValue().toLowerCase()));
+    // let sortedItems = sortItems(filteredItems, store.getSortOption());
+    useEffect(() => {
+        fetchDataJSON().then(data => setData(data))
+    }, []);
+    
     return (<div className="ProductOverview">
+        {console.log(sortedItems)}
         {/* <CarouselSlider /> */}
         <AnimatePresence>
             {sortedItems.length > 0 ?
-            sortedItems.map((product, index) =>
+            sortedItems?.map((product, index) =>
                 <Product key={index} data={product} />
             ) : <h3>Nothing found</h3>}
         </AnimatePresence>
