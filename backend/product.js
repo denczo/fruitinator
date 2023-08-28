@@ -9,18 +9,10 @@ const productSchema = new Schema({
     data: Buffer,
     contentType: String
   },
-  nutrition: [
-    {
-      quantity: Number,
-      calories: Number,
-      fat: Number,
-      cholesterol: Number,
-      natrium: Number,
-      kalium: Number,
-      carbohydratres: Number,
-      protein: Number,
-    }
-  ]
+  nutrition:{
+    type: Object,
+    default: {}
+  }
 })
 
 module.exports = mongoose.model('Product', productSchema)

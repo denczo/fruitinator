@@ -49,8 +49,8 @@ const ProductOverview = () => {
         fetchDataJSON().then(data => setData(data))
     }, []);
     
+
     return (<div className="ProductOverview">
-        {console.log(sortedItems)}
         {/* <CarouselSlider /> */}
         <AnimatePresence>
             {sortedItems.length > 0 ?
