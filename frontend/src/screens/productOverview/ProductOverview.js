@@ -21,9 +21,9 @@ function sortItems(items, sortOption) {
         case 0:
             return items;
         case 1:
-            return items.sort((a, b) => sortAscending(a.title.toLowerCase(), b.title.toLowerCase()));
+            return items.sort((a, b) => sortAscending(a.fruit.toLowerCase(), b.fruit.toLowerCase()));
         case 2:
-            return items.sort((a, b) => sortAscending(a.title.toLowerCase(), b.title.toLowerCase())).reverse();
+            return items.sort((a, b) => sortAscending(a.fruit.toLowerCase(), b.fruit.toLowerCase())).reverse();
         case 3:
             return items.sort((a, b) => sortAscending(a.price, b.price));
         case 4:

@@ -9,8 +9,8 @@ import { motion } from 'framer-motion';
 
 const Product = ({ data }) => {
 
-    console.log(data)
-    const { title, price, image } = data;
+    console.log(JSON.stringify(data))
+    const { fruit, price, image } = data;
     const navigate = useNavigate()
     const handleClick = (data) => {
         navigate('/info')
@@ -24,7 +24,7 @@ const Product = ({ data }) => {
         exit={{ transform: "scale(0)" }}
         transition={{ duration: 0.2 }}
         layout={'position'}
-        key={title}
+        key={fruit}
         >
             <motion.div
                 className="Product"
@@ -35,11 +35,11 @@ const Product = ({ data }) => {
                     <Favorites />
                 </div>
                 <div className='ProductContent'>
-                    <div><b>{title}</b></div>
-                    <div style={{fontSize: 20}}><b>{'$ ' + price / 100}</b></div>
-                    <img key={title} src={image} alt=""></img>
+                    <div><b>{fruit}</b></div>
+                    <div style={{fontSize: 18}}><b>{price}</b></div>
+                    <img key={fruit} src={image} alt=""></img>
                 </div>
-                <AddCorner data={{ title, price, image }} />
+                <AddCorner data={{ fruit, price, image }} />
             </motion.div>
         </motion.div>);
 }

@@ -13,17 +13,17 @@ const ProductInfo = () => {
     return (<div className='ProductInfo'>
         <div id='Details'>
             <Favorites />
-            <img key={data.image} alt={data.title} src={data.image}></img>
+            <img key={data.image} alt={data.fruit} src={data.image}></img>
             <div id='Title'>
                 <div>
-                    <div className="ph">{data.title}</div>
-                    <div className="ph">{'$ ' + data.price / 100}</div>
+                    <div className="ph">{data.fruit}</div>
+                    <div className="ph">{data.price}</div>
                 </div>
                 <AddText data={{ title: data.title, price: data.price, image: data.image }} />
 
             </div>
             <b>Info</b>
-            <p>{data.description}</p>
+            <p>{data.info}</p>
         </div>
         <div id="NutritionInfo">
             <b>Nutrition Facts</b>

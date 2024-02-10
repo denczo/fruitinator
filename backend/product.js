@@ -2,13 +2,11 @@ const mongoose = require("mongoose");
 const { Schema, model } = mongoose;
 
 const productSchema = new Schema({
-  title: String,
-  price: Number,
+  fruit: String,
+  price: String,
   info: String,
-  img: {
-    data: Buffer,
-    contentType: String
-  },
+  location: String,
+  image: String,
   nutrition:{
     type: Object,
     default: {}
