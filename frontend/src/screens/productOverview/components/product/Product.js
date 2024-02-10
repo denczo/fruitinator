@@ -9,8 +9,7 @@ import { motion } from 'framer-motion';
 
 const Product = ({ data }) => {
 
-    console.log(JSON.stringify(data))
-    const { fruit, price, image } = data;
+        const { fruit, price, image } = data;
     const navigate = useNavigate()
     const handleClick = (data) => {
         navigate('/info')

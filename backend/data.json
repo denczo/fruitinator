@@ -1,228 +1,212 @@
 [
-    {
-      "Fruit": "Blueberry",
-      "Info": "Small, round, dark blue fruit with sweet flavor. Native to North America, where it was used by Native Americans for food and medicine.",
-      "Nutritions": {
-        "Carbs": "14g",
-        "Fiber": "2.4g",
-        "Sugars": "9g",
-        "Protein": "0.7g",
-        "Fat": "0.3g",
-        "Calories": "57"
-      },
-      "Location": "United States",
-      "Price": "$3.99 per 100g",
-      "Image": "https://www.denicz.info/index.php/s/fg6i6RdyfamGwEf/preview"
+  {
+    "Fruit": "Blueberry",
+    "Info": "Small, round, dark blue fruit with sweet flavor. Native to North America, where it was used by Native Americans for food and medicine.",
+    "Nutritions": {
+      "Carbs": 14,
+      "Fiber": 2.4,
+      "Sugars": 9,
+      "Protein": 0.7,
+      "Fat": 0.3
     },
-    {
-      "Fruit": "Cherry",
-      "Info": "Small, round fruit with sweet or sour flavor. Native to Europe and Asia, particularly the region between the Black and Caspian Seas.",
-      "Nutritions": {
-        "Carbs": "10g",
-        "Fiber": "2g",
-        "Sugars": "8g",
-        "Protein": "1g",
-        "Fat": "0g",
-        "Calories": "50"
-      },
-      "Location": "Turkey",
-      "Price": "$6.99 per 100g",
-      "Image": "https://www.denicz.info/index.php/s/x9KqbAkop5JApkp/preview"
+    "Location": "United States",
+    "Price": "$3.99 per 100g",
+    "Image": "https://www.denicz.info/index.php/s/fg6i6RdyfamGwEf/preview"
+  },
+  {
+    "Fruit": "Cherry",
+    "Info": "Small, round fruit with sweet or sour flavor. Native to Europe and Asia, particularly the region between the Black and Caspian Seas.",
+    "Nutritions": {
+      "Carbs": 10,
+      "Fiber": 2,
+      "Sugars": 8,
+      "Protein": 1,
+      "Fat": 0
     },
-    {
-      "Fruit": "Durian",
-      "Info": "Large fruit with spiky exterior and strong odor. Native to Southeast Asia, particularly Malaysia and Indonesia.",
-      "Nutritions": {
-        "Carbs": "27g",
-        "Fiber": "9g",
-        "Sugars": "0g",
-        "Protein": "2g",
-        "Fat": "5g",
-        "Calories": "147"
-      },
-      "Location": "Malaysia",
-      "Price": "$8.99 each",
-      "Image": "https://www.denicz.info/index.php/s/jsaLWfgz6wdXZeE/preview"
+    "Location": "Turkey",
+    "Price": "$6.99 per 100g",
+    "Image": "https://www.denicz.info/index.php/s/x9KqbAkop5JApkp/preview"
+  },
+  {
+    "Fruit": "Durian",
+    "Info": "Large fruit with spiky exterior and strong odor. Native to Southeast Asia, particularly Malaysia and Indonesia.",
+    "Nutritions": {
+      "Carbs": 27,
+      "Fiber": 9,
+      "Sugars": 0,
+      "Protein": 2,
+      "Fat": 5
     },
-    {
-      "Fruit": "Fig",
-      "Info": "Sweet fruit with soft, chewy flesh. One of the oldest cultivated fruits, dating back to ancient times in the Mediterranean region, specifically Greece.",
-      "Nutritions": {
-        "Carbs": "19g",
-        "Fiber": "2.9g",
-        "Sugars": "16g",
-        "Protein": "0.8g",
-        "Fat": "0.3g",
-        "Calories": "74"
-      },
-      "Location": "Greece",
-      "Price": "$0.99 each",
-      "Image": "https://www.denicz.info/index.php/s/fSTdXZCKE3HKixN/preview"
+    "Location": "Malaysia",
+    "Price": "$8.99 each",
+    "Image": "https://www.denicz.info/index.php/s/jsaLWfgz6wdXZeE/preview"
+  },
+  {
+    "Fruit": "Fig",
+    "Info": "Sweet fruit with soft, chewy flesh. One of the oldest cultivated fruits, dating back to ancient times in the Mediterranean region, specifically Greece.",
+    "Nutritions": {
+      "Carbs": 19,
+      "Fiber": 2.9,
+      "Sugars": 16,
+      "Protein": 0.8,
+      "Fat": 0.3
     },
-    {
-      "Fruit": "Grenade Apple",
-      "Info": "Red or yellow fruit with crunchy, juicy flesh. Native to Iran, where it has been cultivated for thousands of years.",
-      "Nutritions": {
-        "Carbs": "13g",
-        "Fiber": "3.6g",
-        "Sugars": "13g",
-        "Protein": "1.3g",
-        "Fat": "0.6g",
-        "Calories": "52"
-      },
-      "Location": "Iran",
-      "Price": "$4.99 each",
-      "Image": "https://www.denicz.info/index.php/s/F55rCSDj3X6tyeG/preview"
+    "Location": "Greece",
+    "Price": "$0.99 each",
+    "Image": "https://www.denicz.info/index.php/s/fSTdXZCKE3HKixN/preview"
+  },
+  {
+    "Fruit": "Grenade Apple",
+    "Info": "Red or yellow fruit with crunchy, juicy flesh. Native to Iran, where it has been cultivated for thousands of years.",
+    "Nutritions": {
+      "Carbs": 13,
+      "Fiber": 3.6,
+      "Sugars": 13,
+      "Protein": 1.3,
+      "Fat": 0.6
     },
-    {
-      "Fruit": "Guanabana",
-      "Info": "Tropical fruit with green, spiky skin and soft, white, fibrous flesh. Native to the Caribbean and Central America, specifically the Caribbean, where it has been used in traditional medicine for centuries.",
-      "Nutritions": {
-        "Carbs": "16g",
-        "Fiber": "7.3g",
-        "Sugars": "11g",
-        "Protein": "2g",
-        "Fat": "0.3g",
-        "Calories": "66"
-      },
-      "Location": "Caribbean",
-      "Price": "$3.99 each",
-      "Image": "https://www.denicz.info/index.php/s/6bPr3J6S48itBqF/preview"
+    "Location": "Iran",
+    "Price": "$4.99 each",
+    "Image": "https://www.denicz.info/index.php/s/F55rCSDj3X6tyeG/preview"
+  },
+  {
+    "Fruit": "Guanabana",
+    "Info": "Tropical fruit with green, spiky skin and soft, white, fibrous flesh. Native to the Caribbean and Central America, specifically the Caribbean, where it has been used in traditional medicine for centuries.",
+    "Nutritions": {
+      "Carbs": 16,
+      "Fiber": 7.3,
+      "Sugars": 11,
+      "Protein": 2,
+      "Fat": 0.3
     },
-    {
-      "Fruit": "Lime",
-      "Info": "Small, green citrus fruit with sour flavor. Originated in Southeast Asia, specifically Indonesia, where it has been cultivated for thousands of years.",
-      "Nutritions": {
-        "Carbs": "11g",
-        "Fiber": "2.8g",
-        "Sugars": "1.7g",
-        "Protein": "0.7g",
-        "Fat": "0.2g",
-        "Calories": "30"
-      },
-      "Location": "Indonesia",
-      "Price": "$0.50 each",
-      "Image": "https://www.denicz.info/index.php/s/AsT4dpHmc883sYt/preview"
+    "Location": "Caribbean",
+    "Price": "$3.99 each",
+    "Image": "https://www.denicz.info/index.php/s/6bPr3J6S48itBqF/preview"
+  },
+  {
+    "Fruit": "Lime",
+    "Info": "Small, green citrus fruit with sour flavor. Originated in Southeast Asia, specifically Indonesia, where it has been cultivated for thousands of years.",
+    "Nutritions": {
+      "Carbs": 11,
+      "Fiber": 2.8,
+      "Sugars": 1.7,
+      "Protein": 0.7,
+      "Fat": 0.2
     },
-    {
-      "Fruit": "Mango",
-      "Info": "Juicy tropical fruit with sweet, tangy flavor. Believed to have originated in South Asia, specifically India, over 4,000 years ago.",
-      "Nutritions": {
-        "Carbs": "15g",
-        "Fiber": "3g",
-        "Sugars": "14g",
-        "Protein": "0.8g",
-        "Fat": "0.4g",
-        "Calories": "60"
-      },
-      "Location": "India",
-      "Price": "$2.99 each",
-      "Image": "https://www.denicz.info/index.php/s/ibbTXfxSiCB2gBx/preview"
+    "Location": "Indonesia",
+    "Price": "$0.50 each",
+    "Image": "https://www.denicz.info/index.php/s/AsT4dpHmc883sYt/preview"
+  },
+  {
+    "Fruit": "Mango",
+    "Info": "Juicy tropical fruit with sweet, tangy flavor. Believed to have originated in South Asia, specifically India, over 4,000 years ago.",
+    "Nutritions": {
+      "Carbs": 15,
+      "Fiber": 3,
+      "Sugars": 14,
+      "Protein": 0.8,
+      "Fat": 0.4
     },
-    {
-      "Fruit": "Mangosteen",
-      "Info": "Purple fruit with white, juicy flesh. Native to Southeast Asia, particularly Indonesia.",
-      "Nutritions": {
-        "Carbs": "15g",
-        "Fiber": "5g",
-        "Sugars": "9g",
-        "Protein": "2g",
-        "Fat": "1g",
-        "Calories": "73"
-      },
-      "Location": "Indonesia",
-      "Price": "$4.99 each",
-      "Image": "https://www.denicz.info/index.php/s/kedzpCSnKDz5CAa/preview"
+    "Location": "India",
+    "Price": "$2.99 each",
+    "Image": "https://www.denicz.info/index.php/s/ibbTXfxSiCB2gBx/preview"
+  },
+  {
+    "Fruit": "Mangosteen",
+    "Info": "Purple fruit with white, juicy flesh. Native to Southeast Asia, particularly Indonesia.",
+    "Nutritions": {
+      "Carbs": 15,
+      "Fiber": 5,
+      "Sugars": 9,
+      "Protein": 2,
+      "Fat": 1
     },
-    {
-      "Fruit": "Papaya",
-      "Info": "Orange fruit with sweet, musky flavor and soft, orange flesh. Native to tropical Americas, specifically Mexico, where it was cultivated by the Mayans and Aztecs.",
-      "Nutritions": {
-        "Carbs": "11g",
-        "Fiber": "1.7g",
-        "Sugars": "8.3g",
-        "Protein": "0.5g",
-        "Fat": "0.3g",
-        "Calories": "43"
-      },
-      "Location": "Mexico",
-      "Price": "$1.99 each",
-      "Image": "https://www.denicz.info/index.php/s/PaoysMzeWnczmKQ/preview"
+    "Location": "Indonesia",
+    "Price": "$4.99 each",
+    "Image": "https://www.denicz.info/index.php/s/kedzpCSnKDz5CAa/preview"
+  },
+  {
+    "Fruit": "Papaya",
+    "Info": "Orange fruit with sweet, musky flavor and soft, orange flesh. Native to tropical Americas, specifically Mexico, where it was cultivated by the Mayans and Aztecs.",
+    "Nutritions": {
+      "Carbs": 11,
+      "Fiber": 1.7,
+      "Sugars": 8.3,
+      "Protein": 0.5,
+      "Fat": 0.3
     },
-    {
-      "Fruit": "Passion Fruit",
-      "Info": "Round or oval fruit with a thick, tough rind and juicy, seed-filled interior. Native to Brazil, where it is a staple fruit.",
-      "Nutritions": {
-        "Carbs": "23g",
-        "Fiber": "10g",
-        "Sugars": "11g",
-        "Protein": "2g",
-        "Fat": "0.4g",
-        "Calories": "97"
-      },
-      "Location": "Brazil",
-      "Price": "$1.99 each",
-      "Image": "https://www.denicz.info/index.php/s/Ack26ssi8NbKWyW/preview"
+    "Location": "Mexico",
+    "Price": "$1.99 each",
+    "Image": "https://www.denicz.info/index.php/s/PaoysMzeWnczmKQ/preview"
+  },
+  {
+    "Fruit": "Passion Fruit",
+    "Info": "Round or oval fruit with a thick, tough rind and juicy, seed-filled interior. Native to Brazil, where it is a staple fruit.",
+    "Nutritions": {
+      "Carbs": 23,
+      "Fiber": 10,
+      "Sugars": 11,
+      "Protein": 2,
+      "Fat": 0.4
     },
-    {
-      "Fruit": "Pear",
-      "Info": "Juicy, sweet fruit with a distinctive shape. Native to China, where it has been cultivated for thousands of years.",
-      "Nutritions": {
-        "Carbs": "15g",
-        "Fiber": "7.1g",
-        "Sugars": "9.8g",
-        "Protein": "0.4g",
-        "Fat": "0.1g",
-        "Calories": "57"
-      },
-      "Location": "China",
-      "Price": "$1.49 each",
-      "Image": "https://www.denicz.info/index.php/s/CmXEbbcm2RSMYwC/preview"
+    "Location": "Brazil",
+    "Price": "$1.99 each",
+    "Image": "https://www.denicz.info/index.php/s/Ack26ssi8NbKWyW/preview"
+  },
+  {
+    "Fruit": "Pear",
+    "Info": "Juicy, sweet fruit with a distinctive shape. Native to China, where it has been cultivated for thousands of years.",
+    "Nutritions": {
+      "Carbs": 15,
+      "Fiber": 7.1,
+      "Sugars": 9.8,
+      "Protein": 0.4,
+      "Fat": 0.1
     },
-    {
-      "Fruit": "Physalis",
-      "Info": "Small orange fruit with papery husk. Native to South America, particularly the Andes region.",
-      "Nutritions": {
-        "Carbs": "11g",
-        "Fiber": "3g",
-        "Sugars": "7g",
-        "Protein": "2g",
-        "Fat": "1g",
-        "Calories": "53"
-      },
-      "Location": "Peru",
-      "Price": "$2.49 per 100g",
-      "Image": "https://www.denicz.info/index.php/s/AtdxSH5emkss93P/preview"
+    "Location": "China",
+    "Price": "$1.49 each",
+    "Image": "https://www.denicz.info/index.php/s/CmXEbbcm2RSMYwC/preview"
+  },
+  {
+    "Fruit": "Physalis",
+    "Info": "Small orange fruit with papery husk. Native to South America, particularly the Andes region.",
+    "Nutritions": {
+      "Carbs": 11,
+      "Fiber": 3,
+      "Sugars": 7,
+      "Protein": 2,
+      "Fat": 1
     },
-    {
-      "Fruit": "Pineapple",
-      "Info": "Tropical fruit with spiky green skin and sweet, tangy flesh. Originated in South America, specifically Brazil.",
-      "Nutritions": {
-        "Carbs": "13g",
-        "Fiber": "2.5g",
-        "Sugars": "9.9g",
-        "Protein": "0.5g",
-        "Fat": "0.1g",
-        "Calories": "50"
-      },
-      "Location": "Brazil",
-      "Price": "$2.99 each",
-      "Image": "https://www.denicz.info/index.php/s/Ebk8b95iBBSakGd/preview"
+    "Location": "Peru",
+    "Price": "$2.49 per 100g",
+    "Image": "https://www.denicz.info/index.php/s/AtdxSH5emkss93P/preview"
+  },
+  {
+    "Fruit": "Pineapple",
+    "Info": "Tropical fruit with spiky green skin and sweet, tangy flesh. Originated in South America, specifically Brazil.",
+    "Nutritions": {
+      "Carbs": 13,
+      "Fiber": 2.5,
+      "Sugars": 9.9,
+      "Protein": 0.5,
+      "Fat": 0.1
     },
-    {
-      "Fruit": "Pitahaya",
-      "Info": "Also known as dragon fruit. Bright pink or yellow fruit with white or pink flesh and black seeds. Native to Central America.",
-      "Nutritions": {
-        "Carbs": "9g",
-        "Fiber": "1g",
-        "Sugars": "8g",
-        "Protein": "1g",
-        "Fat": "0g",
-        "Calories": "60"
-      },
-      "Location": "Nicaragua",
-      "Price": "$3.99 each",
-      "Image": "https://www.denicz.info/index.php/s/WHJqSosBHLS2RnC/preview"
-    }
-  ]
-  
+    "Location": "Brazil",
+    "Price": "$2.99 each",
+    "Image": "https://www.denicz.info/index.php/s/Ebk8b95iBBSakGd/preview"
+  },
+  {
+    "Fruit": "Pitahaya",
+    "Info": "Also known as dragon fruit. Bright pink or yellow fruit with white or pink flesh and black seeds. Native to Central America.",
+    "Nutritions": {
+      "Carbs": 9,
+      "Fiber": 1,
+      "Sugars": 8,
+      "Protein": 1,
+      "Fat": 0
+    },
+    "Location": "Nicaragua",
+    "Price": "$3.99 each",
+    "Image": "https://www.denicz.info/index.php/s/WHJqSosBHLS2RnC/preview"
+  }
+]
