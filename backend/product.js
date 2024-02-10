@@ -6,6 +6,7 @@ const productSchema = new Schema({
   price: String,
   info: String,
   location: String,
+  countryCode: String,
   image: String,
   nutrition:{
     type: Object,

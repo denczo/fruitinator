@@ -10,6 +10,7 @@
       "Fat": 0.3
     },
     "Location": "United States",
+    "CountryCode": "US",
     "Price": "$3.99 per 100g",
     "Image": "https://www.denicz.info/index.php/s/fg6i6RdyfamGwEf/preview"
   },
@@ -24,6 +25,7 @@
       "Fat": 0
     },
     "Location": "Turkey",
+    "CountryCode": "TR",
     "Price": "$6.99 per 100g",
     "Image": "https://www.denicz.info/index.php/s/x9KqbAkop5JApkp/preview"
   },
@@ -38,6 +40,7 @@
       "Fat": 5
     },
     "Location": "Malaysia",
+    "CountryCode": "MY",
     "Price": "$8.99 each",
     "Image": "https://www.denicz.info/index.php/s/jsaLWfgz6wdXZeE/preview"
   },
@@ -52,6 +55,7 @@
       "Fat": 0.3
     },
     "Location": "Greece",
+    "CountryCode": "GR",
     "Price": "$0.99 each",
     "Image": "https://www.denicz.info/index.php/s/fSTdXZCKE3HKixN/preview"
   },
@@ -66,6 +70,7 @@
       "Fat": 0.6
     },
     "Location": "Iran",
+    "CountryCode": "IR",
     "Price": "$4.99 each",
     "Image": "https://www.denicz.info/index.php/s/F55rCSDj3X6tyeG/preview"
   },
@@ -80,6 +85,7 @@
       "Fat": 0.3
     },
     "Location": "Caribbean",
+    "CountryCode": "CAR",
     "Price": "$3.99 each",
     "Image": "https://www.denicz.info/index.php/s/6bPr3J6S48itBqF/preview"
   },
@@ -94,6 +100,7 @@
       "Fat": 0.2
     },
     "Location": "Indonesia",
+    "CountryCode": "ID",
     "Price": "$0.50 each",
     "Image": "https://www.denicz.info/index.php/s/AsT4dpHmc883sYt/preview"
   },
@@ -108,6 +115,7 @@
       "Fat": 0.4
     },
     "Location": "India",
+    "CountryCode": "IN",
     "Price": "$2.99 each",
     "Image": "https://www.denicz.info/index.php/s/ibbTXfxSiCB2gBx/preview"
   },
@@ -122,6 +130,7 @@
       "Fat": 1
     },
     "Location": "Indonesia",
+    "CountryCode": "ID",
     "Price": "$4.99 each",
     "Image": "https://www.denicz.info/index.php/s/kedzpCSnKDz5CAa/preview"
   },
@@ -136,6 +145,7 @@
       "Fat": 0.3
     },
     "Location": "Mexico",
+    "CountryCode": "MX",
     "Price": "$1.99 each",
     "Image": "https://www.denicz.info/index.php/s/PaoysMzeWnczmKQ/preview"
   },
@@ -150,6 +160,7 @@
       "Fat": 0.4
     },
     "Location": "Brazil",
+    "CountryCode": "BR",
     "Price": "$1.99 each",
     "Image": "https://www.denicz.info/index.php/s/Ack26ssi8NbKWyW/preview"
   },
@@ -164,6 +175,7 @@
       "Fat": 0.1
     },
     "Location": "China",
+    "CountryCode": "CN",
     "Price": "$1.49 each",
     "Image": "https://www.denicz.info/index.php/s/CmXEbbcm2RSMYwC/preview"
   },
@@ -178,6 +190,7 @@
       "Fat": 1
     },
     "Location": "Peru",
+    "CountryCode": "PE",
     "Price": "$2.49 per 100g",
     "Image": "https://www.denicz.info/index.php/s/AtdxSH5emkss93P/preview"
   },
@@ -192,6 +205,7 @@
       "Fat": 0.1
     },
     "Location": "Brazil",
+    "CountryCode": "BR",
     "Price": "$2.99 each",
     "Image": "https://www.denicz.info/index.php/s/Ebk8b95iBBSakGd/preview"
   },
@@ -206,6 +220,7 @@
       "Fat": 0
     },
     "Location": "Nicaragua",
+    "CountryCode": "NI",
     "Price": "$3.99 each",
     "Image": "https://www.denicz.info/index.php/s/WHJqSosBHLS2RnC/preview"
   }

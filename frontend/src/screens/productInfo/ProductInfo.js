@@ -8,6 +8,7 @@ import Favorites from '../../navigation/buttons/favorites/Favorites';
 // import MapChart from '../map/Map';
 import 'chart.js/auto';
 import BarChart from '../chart/Chart';
+import FlagByCountry from '../countryFlag/FlagByCountry';
 const ProductInfo = () => {
 
     const data = toJS(store?.getProduct())
@@ -29,11 +30,15 @@ const ProductInfo = () => {
         <div id="NutritionInfo">
             <b>Info</b>
             <p>{data.info}</p>
+            <p></p>
+            <b>Origin:</b>
+            <FlagByCountry country={data.countryCode} name={data.location} />
+            <p></p>
             <b>Nutrition facts per 100g</b>
             <p></p>
             <BarChart data={data.nutrition}/>
+            <p></p>
         </div>
-        {/* <MapChart /> */}
     </div>);
 }
 

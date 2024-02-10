@@ -19,6 +19,7 @@ const initData = () => {
       price: fruit.Price,
       info: fruit.Info,
       location: fruit.Location,
+      countryCode: fruit.CountryCode,
       image: fruit.Image,
       nutrition: fruit.Nutritions
     })
