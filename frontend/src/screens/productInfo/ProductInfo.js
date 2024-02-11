@@ -5,7 +5,6 @@ import store from "../../stores/Store"
 import AddText from '../../navigation/buttons/add/addtext/AddText';
 import { motion } from 'framer-motion';
 import Favorites from '../../navigation/buttons/favorites/Favorites';
-// import MapChart from '../map/Map';
 import 'chart.js/auto';
 import BarChart from '../chart/Chart';
 import FlagByCountry from '../countryFlag/FlagByCountry';
@@ -16,15 +15,14 @@ const ProductInfo = () => {
     return (<div className='ProductInfo'>
 
         <div id='Details'>
-            <Favorites />
-            <img key={data.image} alt={data.fruit} src={data.image}></img>
+        <div><Favorites /></div>
+            <div><img key={data.image} alt={data.fruit} src={data.image}></img></div>
             <div id='Title'>
                 <div>
                     <div className="ph">{data.fruit}</div>
                     <div className="ph">{data.price}</div>
                 </div>
                 <AddText data={{ title: data.title, price: data.price, image: data.image }} />
-
             </div>
         </div>
         <div id="NutritionInfo">
