@@ -34,7 +34,7 @@ function sortItems(items, sortOption) {
 }
 
 async function fetchDataJSON() {
-    const response = await fetch('http://localhost:9000/product');
+    const response = await fetch('http://localhost:9000/products');
     const data = await response.json();
     return data;
 }

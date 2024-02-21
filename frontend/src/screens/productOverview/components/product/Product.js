@@ -36,7 +36,7 @@ const Product = ({ data }) => {
                 <div className='ProductContent'>
                     <div><b>{fruit}</b></div>
                     <div style={{fontSize: 18}}><b>{price}</b></div>
-                    <img key={fruit} src={image} alt=""></img>
+                    <img key={fruit} src={image} loading="lazy" alt=""></img>
                 </div>
                 <AddCorner data={{ fruit, price, image }} />
             </motion.div>
