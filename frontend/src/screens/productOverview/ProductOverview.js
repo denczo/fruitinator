@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import './ProductOverview.sass';
-import data from '../../mockData/data';
 import Product from './components/product/Product';
 import { observer } from "mobx-react";
 import store from "../../stores/Store"
@@ -39,25 +38,48 @@ async function fetchDataJSON() {
     return data;
 }
 
+async function fetchPage(page) {
+    const response = await fetch(`http://localhost:9000/products/${page}`);
+    const data = await response.json();
+    return data;
+}
+
+
 const ProductOverview = () => {
 
     const [sortedItems, setData] = useState([]);
+    const [page, setPage] = useState(1);
     // why doesn't it work, when filteredItems is declared outside of this component?
-    // let filteredItems = data.filter(product => product.title.toLowerCase().includes(store.getSearchValue().toLowerCase()));
+    // let filteredItems = sortedItems?.items.filter(product => product.title.toLowerCase().includes(store.getSearchValue().toLowerCase()));
     // let sortedItems = sortItems(filteredItems, store.getSortOption());
-    useEffect(() => {
-        fetchDataJSON().then(data => setData(data))
-    }, []);
-    
 
-    return (<div className="ProductOverview">
-        {/* <CarouselSlider /> */}
-        <AnimatePresence>
-            {sortedItems.length > 0 ?
-            sortedItems?.map((product, index) =>
-                <Product key={index} data={product} />
-            ) : <h3>Nothing found</h3>}
-        </AnimatePresence>
+    const paginationElement = (pages) => {
+        const divs = [];
+
+        for (let i = 0; i < pages; i++) {
+            divs.push(<button key={i + 1} className={`tw-join-item tw-btn ${i + 1 === page ? "tw-btn-active" : ""}`} onClick={() => setPage(i + 1)}>{i}</button>);
+        }
+        return <div className="tw-join tw-justify-center">{divs}</div>;
+    }
+
+
+    useEffect(() => {
+        fetchPage(page).then(data => setData(data))
+    }, [page]);
+
+
+    return (<div className="Container">
+        <div className="ProductOverview">
+            {/* <CarouselSlider /> */}
+            <AnimatePresence>
+                {sortedItems ?
+                    sortedItems?.items?.map((product, index) =>
+                        <Product key={index} data={product} />
+                    ) : <h3>Nothing found</h3>}
+            </AnimatePresence>
+
+        </div>
+        {paginationElement(sortedItems?.totalPages)}
     </div>);
 }
 

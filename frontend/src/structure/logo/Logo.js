@@ -1,6 +1,6 @@
 import React from 'react';
 import './Logo.sass';
-import PalmTree from '../../mockData/images/palmtree.png';
+import PalmTree from '../../assets/palmtree.png';
 import { useNavigate } from "react-router-dom"
 
 const Logo = ({scale}) => {
