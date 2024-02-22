@@ -4,6 +4,7 @@ const app = express()
 const cors = require('cors')
 
 app.use(cors());
+app.set('env', 'production');
 app.get('/', async function (req, res) {
   res.send("App is working!")
 })

@@ -5,9 +5,10 @@ class Database {
   constructor() {
     this._connect();
   }
+  
   _connect() {
     mongoose
-      .connect(`mongodb+srv://fruitlover:hU5ime8QmEQDGPcs@clusterfruitinator.othe67z.mongodb.net/`)
+      .connect(`mongodb+srv://fruitlover:btBmDaJBdCVFGtu0@clusterfruitinator.mc1wpgi.mongodb.net/?retryWrites=true&w=majority&appName=ClusterFruitinator`)
       .then(() => {
         console.log('Database connection successful')
       })
