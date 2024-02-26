@@ -12,7 +12,7 @@
     "Location": "United States",
     "CountryCode": "US",
     "Price": "$3.99 per 100g",
-    "Image": "https://www.denicz.info/index.php/s/fg6i6RdyfamGwEf/preview"
+    "Image": "https://www.denicz.info/index.php/s/3ejrCpjW4zeD2Wx/download/blueberry.webp"
   },
   {
     "Fruit": "Cherry",
@@ -27,7 +27,7 @@
     "Location": "Turkey",
     "CountryCode": "TR",
     "Price": "$6.99 per 100g",
-    "Image": "https://www.denicz.info/index.php/s/x9KqbAkop5JApkp/preview"
+    "Image": "https://www.denicz.info/index.php/s/pciYSGCkjFMCiYp/download/cherry.webp"
   },
   {
     "Fruit": "Durian",
@@ -42,7 +42,7 @@
     "Location": "Malaysia",
     "CountryCode": "MY",
     "Price": "$8.99 each",
-    "Image": "https://www.denicz.info/index.php/s/jsaLWfgz6wdXZeE/preview"
+    "Image": "https://www.denicz.info/index.php/s/8s9weQJjcikDrg6/download/durian.webp"
   },
   {
     "Fruit": "Fig",
@@ -57,7 +57,7 @@
     "Location": "Greece",
     "CountryCode": "GR",
     "Price": "$0.99 each",
-    "Image": "https://www.denicz.info/index.php/s/fSTdXZCKE3HKixN/preview"
+    "Image": "https://www.denicz.info/index.php/s/MW7mjRNXF24d2E4/download/feige.webp"
   },
   {
     "Fruit": "Grenade Apple",
@@ -72,7 +72,7 @@
     "Location": "Iran",
     "CountryCode": "IR",
     "Price": "$4.99 each",
-    "Image": "https://www.denicz.info/index.php/s/F55rCSDj3X6tyeG/preview"
+    "Image": "https://www.denicz.info/index.php/s/sPMnftTNrYag7QT/download/granatapfel.webp"
   },
   {
     "Fruit": "Guanabana",
@@ -87,7 +87,7 @@
     "Location": "Brazil",
     "CountryCode": "BR",
     "Price": "$3.99 each",
-    "Image": "https://www.denicz.info/index.php/s/6bPr3J6S48itBqF/preview"
+    "Image": "https://www.denicz.info/index.php/s/TNwAGZASM4wDiwn/download/guanabanana.webp"
   },
   {
     "Fruit": "Lime",
@@ -102,7 +102,7 @@
     "Location": "Indonesia",
     "CountryCode": "ID",
     "Price": "$0.50 each",
-    "Image": "https://www.denicz.info/index.php/s/AsT4dpHmc883sYt/preview"
+    "Image": "https://www.denicz.info/index.php/s/sxnMGT2XJ7bJkX9/download/limette.webp"
   },
   {
     "Fruit": "Mango",
@@ -117,7 +117,7 @@
     "Location": "India",
     "CountryCode": "IN",
     "Price": "$2.99 each",
-    "Image": "https://www.denicz.info/index.php/s/ibbTXfxSiCB2gBx/preview"
+    "Image": "https://www.denicz.info/index.php/s/zGd8WHqWwLGaRPD/download/mango.webp"
   },
   {
     "Fruit": "Mangosteen",
@@ -132,7 +132,7 @@
     "Location": "Indonesia",
     "CountryCode": "ID",
     "Price": "$4.99 each",
-    "Image": "https://www.denicz.info/index.php/s/kedzpCSnKDz5CAa/preview"
+    "Image": "https://www.denicz.info/index.php/s/zGd8WHqWwLGaRPD/download/magnosteen.webp"
   },
   {
     "Fruit": "Papaya",
@@ -147,7 +147,7 @@
     "Location": "Mexico",
     "CountryCode": "MX",
     "Price": "$1.99 each",
-    "Image": "https://www.denicz.info/index.php/s/PaoysMzeWnczmKQ/preview"
+    "Image": "https://www.denicz.info/index.php/s/wWxXEQ9i7WD4wSQ/download/papaya.webp"
   },
   {
     "Fruit": "Passion Fruit",
@@ -162,7 +162,7 @@
     "Location": "Brazil",
     "CountryCode": "BR",
     "Price": "$1.99 each",
-    "Image": "https://www.denicz.info/index.php/s/Ack26ssi8NbKWyW/preview"
+    "Image": "https://www.denicz.info/index.php/s/6SHCkKyMaYz6Lzs/download/passionfruit.webp"
   },
   {
     "Fruit": "Pear",
@@ -177,7 +177,7 @@
     "Location": "China",
     "CountryCode": "CN",
     "Price": "$1.49 each",
-    "Image": "https://www.denicz.info/index.php/s/CmXEbbcm2RSMYwC/preview"
+    "Image": "https://www.denicz.info/index.php/s/HkTnnnTPMacLGTP/download/pear.webp"
   },
   {
     "Fruit": "Physalis",
@@ -192,7 +192,7 @@
     "Location": "Peru",
     "CountryCode": "PE",
     "Price": "$2.49 per 100g",
-    "Image": "https://www.denicz.info/index.php/s/AtdxSH5emkss93P/preview"
+    "Image": "https://www.denicz.info/index.php/s/YAjML5FJtCd9X6s/download/physalis.webp"
   },
   {
     "Fruit": "Pineapple",
@@ -207,7 +207,7 @@
     "Location": "Brazil",
     "CountryCode": "BR",
     "Price": "$2.99 each",
-    "Image": "https://www.denicz.info/index.php/s/Ebk8b95iBBSakGd/preview"
+    "Image": "https://www.denicz.info/index.php/s/2Lb9WrLyJFP77mB/download/pineapple.webp"
   },
   {
     "Fruit": "Pitahaya",
@@ -222,6 +222,6 @@
     "Location": "Nicaragua",
     "CountryCode": "NI",
     "Price": "$3.99 each",
-    "Image": "https://www.denicz.info/index.php/s/WHJqSosBHLS2RnC/preview"
+    "Image": "https://www.denicz.info/index.php/s/BmS3Cp2jn6zs66m/download/pitahaya.webp"
   }
 ]
