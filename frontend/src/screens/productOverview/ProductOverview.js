@@ -4,7 +4,10 @@ import Product from './components/product/Product';
 import { observer } from "mobx-react";
 import store from "../../stores/Store"
 import { AnimatePresence } from 'framer-motion';
+import { fetchProductPage, selectItems } from '../../stores/ReduxStore';
 // import CarouselSlider from './components/CarouselSlider/CarouselSlider';
+import { useSelector, useDispatch } from 'react-redux'
+
 
 
 function sortAscending(a, b) {
@@ -46,6 +49,8 @@ async function fetchPage(page) {
 
 
 const ProductOverview = () => {
+    const dispatch = useDispatch();
+    const items = useSelector(selectItems)
 
     const [sortedItems, setData] = useState([]);
     const [page, setPage] = useState(1);
@@ -64,7 +69,10 @@ const ProductOverview = () => {
 
 
     useEffect(() => {
-        fetchPage(page).then(data => setData(data))
+        // fetchPage(page).then(data => setData(data))
+        dispatch(fetchProductPage(page))
+        console.log(JSON.stringify(items))
+        // console.log(JSON.stringify(items))
     }, [page]);
 
 
@@ -72,8 +80,8 @@ const ProductOverview = () => {
         <div className="ProductOverview">
             {/* <CarouselSlider /> */}
             <AnimatePresence>
-                {sortedItems ?
-                    sortedItems?.items?.map((product, index) =>
+                {items ?
+                    items?.items?.map((product, index) =>
                         <Product key={index} data={product} />
                     ) : <h3>Nothing found</h3>}
             </AnimatePresence>

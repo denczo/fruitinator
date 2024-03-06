@@ -4,6 +4,7 @@
   "private": false,
   "homepage": "https://denczo.github.io/fruitinator/",
   "dependencies": {
+    "@reduxjs/toolkit": "^2.2.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -17,11 +18,13 @@
     "react-country-flag": "^3.1.0",
     "react-dom": "^18.2.0",
     "react-leaflet": "^4.2.1",
+    "react-redux": "^9.1.0",
     "react-router-dom": "^6.11.1",
     "react-scripts": "5.0.1",
     "react-select": "^5.7.3",
     "react-simple-maps": "^3.0.0",
     "react-social-icons": "^5.15.0",
+    "redux": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -59,7 +62,7 @@
     "sass": "^1.63.4"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
+  "main": "index.tsx",
   "keywords": [],
   "author": "",
   "license": "ISC",
