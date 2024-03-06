@@ -4,7 +4,7 @@ import Product from './components/product/Product';
 import { observer } from "mobx-react";
 import store from "../../stores/Store"
 import { AnimatePresence } from 'framer-motion';
-import { fetchProductPage, selectItems } from '../../stores/ReduxStore';
+import { AppDispatch, fetchProductPage, selectItems } from '../../stores/ReduxStore.tsx';
 // import CarouselSlider from './components/CarouselSlider/CarouselSlider';
 import { useSelector, useDispatch } from 'react-redux'
 
@@ -49,7 +49,7 @@ async function fetchPage(page) {
 
 
 const ProductOverview = () => {
-    const dispatch = useDispatch();
+    const dispatch = useDispatch<AppDispatch>();
     const items = useSelector(selectItems)
 
     const [sortedItems, setData] = useState([]);
@@ -59,10 +59,10 @@ const ProductOverview = () => {
     // let sortedItems = sortItems(filteredItems, store.getSortOption());
 
     const paginationElement = (pages) => {
-        const divs = [];
+        const divs = [] as any[];
 
         for (let i = 0; i < pages; i++) {
-            divs.push(<button key={i + 1} className={`tw-join-item tw-btn ${i + 1 === page ? "tw-btn-active" : ""}`} onClick={() => setPage(i + 1)}>{i}</button>);
+            divs.push(<button key={i + 1} onClick={() => setPage(i + 1)}>{i}</button>);
         }
         return <div className="tw-join tw-justify-center">{divs}</div>;
     }
@@ -71,8 +71,6 @@ const ProductOverview = () => {
     useEffect(() => {
         // fetchPage(page).then(data => setData(data))
         dispatch(fetchProductPage(page))
-        console.log(JSON.stringify(items))
-        // console.log(JSON.stringify(items))
     }, [page]);
 
 
@@ -87,7 +85,7 @@ const ProductOverview = () => {
             </AnimatePresence>
 
         </div>
-        {paginationElement(sortedItems?.totalPages)}
+        {/* {paginationElement(sortedItems?.totalPages)} */}
     </div>);
 }
 

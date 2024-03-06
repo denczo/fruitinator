@@ -1,7 +1,7 @@
 import './App.sass';
 import Wrapper from './structure/wrapper/Wrapper';
 import { Provider } from 'react-redux';
-import store from './stores/ReduxStore';
+import { store } from './stores/ReduxStore.tsx';
 import React from 'react';
 
 

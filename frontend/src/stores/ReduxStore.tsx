@@ -1,54 +1,38 @@
-import { createSlice, configureStore, createAsyncThunk } from '@reduxjs/toolkit'
+import { createSlice, configureStore, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit'
 import { fetchPage } from '../api';
+import { CartState, Item } from '../interfaces';
 
-
-// handles all actions for favorites
-const favoriteSlice = createSlice({
-  name: 'favorites',
-  initialState: {
-    favorites: []
-  },
-  reducers: {
-    addItem: (state, action) => {
-      state.items.push(action.payload);
-    },
-    removeItem: (state, action) => {
-      const itemId = action.payload;
-      state.favorites = state.favorites.filter(item => item.id != itemId);
-    }
-  }
-})
-
-const productSlice = createSlice({
-  name: 'products',
-  initialState: {
-    
-  }
-
-})
+const initialState: CartState = {
+  items: { items: [], amountPages: 0},
+  loading: false,
+  error: ''
+}
 
 // handles all actions for cart
 const cartSlice = createSlice({
   name: 'cart',
-  initialState: {
-    items: [],
-    loading: false, // Add loading state to track fetching state
-    error: null,  
-  },
+  initialState,
   reducers: {
-    addItem: (state, action) => {
-      state.items.push(action.payload);
+    addItem: (state, action: PayloadAction<Item>) => {
+      state.items.items.push(action.payload);
     },
-    removeItem: (state, action) => {
+    removeItem: (state, action: PayloadAction<string>) => {
       const itemId = action.payload;
-      state.items = state.items.filter(item => item.id != itemId);
+      state.items.items = state.items.items.filter(item => item.id != itemId);
+    },
+    sortItemsAscending: (state) => {
+      state.items.items = [...state.items.items].sort((a, b) => a.fruit.localeCompare(b.fruit))
+    },
+    sortItemsDescending: (state) => {
+      state.items.items = [...state.items.items].sort((a, b) => b.fruit.localeCompare(a.fruit))
     }
   },
+  // only for async actions
   extraReducers: (builder) => {
     builder
       .addCase(fetchProductPage.pending, (state) => {
         state.loading = true; // Set loading state to true when fetching starts
-        state.error = null;   // Clear any previous errors
+        state.error = "";   // Clear any previous errors
       })
       .addCase(fetchProductPage.fulfilled, (state, action) => {
         state.loading = false;      // Set loading state to false when fetching is done
@@ -56,7 +40,7 @@ const cartSlice = createSlice({
       })
       .addCase(fetchProductPage.rejected, (state, action) => {
         state.loading = false;       // Set loading state to false if fetching fails
-        state.error = action.error.message; // Set error state with error message
+        state.error = action.error.message as string; // Set error state with error message
       });
   }
 })
@@ -64,7 +48,7 @@ const cartSlice = createSlice({
 // async fetch to receive all products of a certain page
 export const fetchProductPage = createAsyncThunk(
   'products/fetchPage',
-  async (page) => {
+  async (page: number) => {
     try {
       const response = await fetchPage(page);
       return response;
@@ -75,12 +59,15 @@ export const fetchProductPage = createAsyncThunk(
 );
 
 // makes actions available for useSelection
-export const { addItem, removeItem } = cartSlice.actions
+export const { addItem, removeItem, sortItemsAscending, sortItemsDescending } = cartSlice.actions
 
 // makes state items available for useSelection
 export const selectItems = (cart) => cart.items;
 
 // makes reducer available for the provider in App.js
-export default configureStore({
+export const store = configureStore({
   reducer: cartSlice.reducer,
 })
+
+// type for dispatch
+export type AppDispatch = typeof store.dispatch;

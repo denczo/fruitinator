@@ -2,19 +2,12 @@ import React from 'react';
 import './Wrapper.sass';
 import {HashRouter as Router, useLocation} from 'react-router-dom';
 import Navbar from '../../navigation/navbar/Navbar';
-import Content from '../content/Content';
+import Content from '../content/Content.tsx';
 import Footer from '../footer/Footer';
 import Header from '../header/Header';
-import Sortbar from '../../navigation/sortbar/Sortbar';
+import Sortbar from '../../navigation/sortbar/Sortbar.tsx';
 // import CarouselSlider from '../../screens/productOverview/components/CarouselSlider/CarouselSlider';
 import { observer } from "mobx-react";
-
-const options = [
-    { value: 0, label: "Relevancy" },
-    { value: 1, label: "Title: A - Z" },
-    { value: 2, label: "Title: Z - A" },
-    { value: 3, label: "Price: Low - High" },
-    { value: 4, label: "Price: High - Low" }]
 
 const Wrapper = () => {
 
@@ -22,7 +15,7 @@ const Wrapper = () => {
         <Router>
             <Header/>
             <Navbar/>
-            <Sortbar options={options}/>
+            <Sortbar/>
             {/* <CarouselSlider/> */}
             <Content/>
             <Footer/>

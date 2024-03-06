@@ -1,9 +1,9 @@
 import React from 'react';
 import './Content.sass';
 import {Route, Routes} from 'react-router-dom';
-import ProductOverview from '../../screens/productOverview/ProductOverview';
-import ProductInfo from '../../screens/productInfo/ProductInfo';
-import CartOverview from '../../screens/cartOverview/CartOverview';
+import ProductOverview from '../../screens/productOverview/ProductOverview.tsx';
+import ProductInfo from '../../screens/productInfo/ProductInfo.js';
+import CartOverview from '../../screens/cartOverview/CartOverview.js';
 
 const Content = () => {
     return (<div className="Content">
