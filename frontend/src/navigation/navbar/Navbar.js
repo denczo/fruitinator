@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navbar.sass';
 import Searchbar from '../searchbar/Searchbar.tsx';
-import Cart from '../buttons/cart/Cart';
+import Cart from '../buttons/cart/Cart.tsx';
 import Favorites from '../buttons/favorites/Favorites';
 
 const Navbar = () => {

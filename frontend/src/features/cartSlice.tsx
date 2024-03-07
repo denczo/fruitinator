@@ -1,11 +1,12 @@
-import { PayloadAction, createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { CartState, Item } from "../interfaces";
-import { fetchPage } from "../api";
+import { PayloadAction, createSlice } from "@reduxjs/toolkit";
+import { CartItem, CartState, Item, } from "../interfaces";
+import { extractPrice } from "../utils.ts";
 
 const initialState: CartState = {
-    items: { items: [], amountPages: 0 },
+    items: [],
     loading: false,
-    error: ''
+    error: '',
+    totalAmount: 0
 }
 
 // handles all actions for cart
@@ -14,60 +15,29 @@ const cartSlice = createSlice({
     initialState,
     reducers: {
         addItem: (state, action: PayloadAction<Item>) => {
-            state.items.items.push(action.payload);
+            const index = state.items.findIndex(item => item.item.fruit === action.payload.fruit)
+            const price = extractPrice(action.payload.price)
+            state.totalAmount += 1
+            if(index === -1){
+                state.items.push({item: action.payload, amount: 1, totalPrice: price});
+            }else{
+                const {amount, totalPrice} = state.items[index]
+                const newArray = [...state.items];
+                newArray[index] = {item: action.payload, amount: amount + 1, totalPrice: totalPrice + price}
+            }
         },
         removeItem: (state, action: PayloadAction<string>) => {
-            const itemId = action.payload;
-            state.items.items = state.items.items.filter(item => item.id != itemId);
-        },
-        sortItemsAscending: (state) => {
-            state.items.items = [...state.items.items].sort((a, b) => a.fruit.localeCompare(b.fruit))
-        },
-        sortItemsDescending: (state) => {
-            state.items.items = [...state.items.items].sort((a, b) => b.fruit.localeCompare(a.fruit))
-        },
-        sortItemsPriceAscending: (state) => {
-            state.items.items = [...state.items.items].sort((a, b) => a.price.localeCompare(b.price))
-        },
-        sortItemsPriceDescending: (state) => {
-            state.items.items = [...state.items.items].sort((a, b) => b.price.localeCompare(a.price))
+            // const itemId = action.payload;
+            // state.items = state.items.filter(item => item.f != itemId);
         },
     },
-    // only for async actions
-    extraReducers: (builder) => {
-        builder
-            .addCase(fetchProductPage.pending, (state) => {
-                state.loading = true; // Set loading state to true when fetching starts
-                state.error = "";   // Clear any previous errors
-            })
-            .addCase(fetchProductPage.fulfilled, (state, action) => {
-                state.loading = false;      // Set loading state to false when fetching is done
-                state.items = action.payload; // Update items array with fetched data
-            })
-            .addCase(fetchProductPage.rejected, (state, action) => {
-                state.loading = false;       // Set loading state to false if fetching fails
-                state.error = action.error.message as string; // Set error state with error message
-            });
-    }
 })
 
-// async fetch to receive all products of a certain page
-export const fetchProductPage = createAsyncThunk(
-    'products/fetchPage',
-    async (page: number) => {
-        try {
-            const response = await fetchPage(page);
-            return response;
-        } catch (error) {
-            throw error;
-        }
-    }
-);
 
 // makes actions available for useSelection
-export const { addItem, removeItem, sortItemsAscending, sortItemsDescending } = cartSlice.actions
+export const { addItem, removeItem } = cartSlice.actions
 
 // makes state items available for useSelection
-export const selectItems = (cart) => cart.items;
+// export const selectItems = (cart) => cart.items;
 
 export default cartSlice.reducer; 

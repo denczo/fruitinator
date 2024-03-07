@@ -28,8 +28,15 @@ export interface Items {
     amountPages: number
 }
 
+export interface CartItem {
+    item: Item,
+    amount: number,
+    totalPrice: number,
+}
+
 export interface CartState {
-    items: Items,
+    items: CartItem[],
+    totalAmount: number,
     loading: boolean,
     error: string,
 }

@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import store from "../../../../stores/Store"
 import './Product.sass';
-import AddCorner from '../../../../navigation/buttons/add/addcorner/AddCorner';
+import AddCorner from '../../../../navigation/buttons/add/addcorner/AddCorner.tsx';
 import Favorites from '../../../../navigation/buttons/favorites/Favorites';
 
 import { motion } from 'framer-motion';
@@ -42,7 +42,7 @@ const Product = ({ data }) => {
                 {loading? <Loader /> : <></>}
                 <img key={fruit} src={image} onLoad={() => setLoading(false)} loading="lazy" alt=""></img>
             </div>
-            <AddCorner data={{ fruit, price, image }} />
+            <AddCorner data={data} />
         </motion.div>
     </motion.div>);
 }

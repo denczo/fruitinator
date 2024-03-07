@@ -1,14 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { AppDispatch } from '../../stores/ReduxStore.tsx';
-import { sortItemsAscending, sortItemsDescending } from '../../features/productSlice.tsx';
+import { AppDispatch } from '../../../stores/ReduxStore.tsx';
+import { sortItemsAscending, sortItemsDescending } from '../../../features/productSlice.tsx';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
-const Sortbar = () => {
+const SortOption = () => {
 
+    const [option, setOption] = useState("")
     const dispatch = useDispatch<AppDispatch>();
 
     const sortOption = (option: string) => {
@@ -29,9 +30,9 @@ const Sortbar = () => {
         <Select
             labelId="sort-label"
             id="sort-select"
-            value={'test'}
+            value={option}
             label="Sort"
-            onChange={(e) => sortOption(e.target.value)}
+            onChange={(e) => {sortOption(e.target.value); setOption(e.target.value)}}
         >
             <MenuItem value={'relevancy'}>Relevancy</MenuItem>
             <MenuItem value={'ascending'}>Title: A - Z</MenuItem>
@@ -42,4 +43,4 @@ const Sortbar = () => {
     </FormControl>);
 }
 
-export default Sortbar;
+export default SortOption;

@@ -1,12 +1,13 @@
 import React from 'react';
 import './Cart.sass';
-import { observer } from "mobx-react";
 import { useNavigate } from "react-router-dom"
-import store from "../../../stores/Store"
+import { useSelector } from 'react-redux';
+import { RootState } from '../../../stores/ReduxStore';
 
 const Cart = () => {
     let navigate = useNavigate();
-    const cartCount = store.getCartCount()
+    const cartCount = useSelector((state: RootState) => state.cart.totalAmount)
+
     return (<div className="Cart" onClick={() => navigate("/cart")}>
         <div className="Bucket">
             {cartCount > 0 ? (
@@ -21,4 +22,4 @@ const Cart = () => {
     </div>);
 }
 
-export default observer(Cart);
+export default Cart;
