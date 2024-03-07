@@ -1,7 +1,11 @@
 import React from 'react';
-import './Sortbar.sass';
 import { useDispatch } from 'react-redux';
-import { AppDispatch, sortItemsAscending, sortItemsDescending } from '../../stores/ReduxStore.tsx';
+import { AppDispatch } from '../../stores/ReduxStore.tsx';
+import { sortItemsAscending, sortItemsDescending } from '../../features/productSlice.tsx';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
 
 const Sortbar = () => {
 
@@ -20,17 +24,22 @@ const Sortbar = () => {
         }
     }
 
-    return (<div id="Sortbar">
-        <div className="ElementWrapper">
-            <select onChange={(e) => sortOption(e.target.value)}>
-                <option >Relevancy</option>
-                <option value={'ascending'}>Title: A - Z</option>
-                <option value={'descending'}>Title: Z - A</option>
-                <option>Price: Low - High</option>
-                <option>Price: High - Low</option>
-            </select>
-        </div>
-    </div>);
+    return (<FormControl style={{ width: '200px' }}>
+        <InputLabel id="sort-label">Sort</InputLabel>
+        <Select
+            labelId="sort-label"
+            id="sort-select"
+            value={'test'}
+            label="Sort"
+            onChange={(e) => sortOption(e.target.value)}
+        >
+            <MenuItem value={'relevancy'}>Relevancy</MenuItem>
+            <MenuItem value={'ascending'}>Title: A - Z</MenuItem>
+            <MenuItem value={'descending'}>Title: Z - A</MenuItem>
+            <MenuItem value={''}>Price: Low - High</MenuItem>
+            <MenuItem value={''}>Price: High - Low</MenuItem>
+        </Select>
+    </FormControl>);
 }
 
 export default Sortbar;

@@ -33,3 +33,10 @@ export interface CartState {
     loading: boolean,
     error: string,
 }
+
+export interface ProductState {
+    items: Items,
+    mutatedItems: Items,
+    loading: boolean,
+    error: string,
+}

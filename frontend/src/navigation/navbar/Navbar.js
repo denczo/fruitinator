@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navbar.sass';
-import Searchbar from '../searchbar/Searchbar';
+import Searchbar from '../searchbar/Searchbar.tsx';
 import Cart from '../buttons/cart/Cart';
 import Favorites from '../buttons/favorites/Favorites';
 

@@ -1,62 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import './ProductOverview.sass';
 import Product from './components/product/Product';
-import { observer } from "mobx-react";
-import store from "../../stores/Store"
 import { AnimatePresence } from 'framer-motion';
-import { AppDispatch, fetchProductPage, selectItems } from '../../stores/ReduxStore.tsx';
-// import CarouselSlider from './components/CarouselSlider/CarouselSlider';
+import { AppDispatch, RootState } from '../../stores/ReduxStore.tsx';
 import { useSelector, useDispatch } from 'react-redux'
-
-
-
-function sortAscending(a, b) {
-    if (a < b) //sort string ascending
-        return -1;
-    if (a > b)
-        return 1;
-    return 0; //default return value (no sorting)
-}
-
-function sortItems(items, sortOption) {
-    switch (Number(sortOption)) {
-        case 0:
-            return items;
-        case 1:
-            return items.sort((a, b) => sortAscending(a.fruit.toLowerCase(), b.fruit.toLowerCase()));
-        case 2:
-            return items.sort((a, b) => sortAscending(a.fruit.toLowerCase(), b.fruit.toLowerCase())).reverse();
-        case 3:
-            return items.sort((a, b) => sortAscending(a.price, b.price));
-        case 4:
-            return items.sort((a, b) => sortAscending(a.price, b.price)).reverse();
-        default:
-            return items;
-    }
-}
-
-async function fetchDataJSON() {
-    const response = await fetch('http://localhost:9000/products');
-    const data = await response.json();
-    return data;
-}
-
-async function fetchPage(page) {
-    const response = await fetch(`http://localhost:9000/products/${page}`);
-    const data = await response.json();
-    return data;
-}
-
+import { fetchProductPage } from '../../features/productSlice.tsx';
 
 const ProductOverview = () => {
     const dispatch = useDispatch<AppDispatch>();
-    const items = useSelector(selectItems)
+    const items = useSelector((state: RootState) => state.product.mutatedItems)
 
-    const [sortedItems, setData] = useState([]);
     const [page, setPage] = useState(1);
-    // why doesn't it work, when filteredItems is declared outside of this component?
-    // let filteredItems = sortedItems?.items.filter(product => product.title.toLowerCase().includes(store.getSearchValue().toLowerCase()));
-    // let sortedItems = sortItems(filteredItems, store.getSortOption());
 
     const paginationElement = (pages) => {
         const divs = [] as any[];
@@ -64,19 +18,15 @@ const ProductOverview = () => {
         for (let i = 0; i < pages; i++) {
             divs.push(<button key={i + 1} onClick={() => setPage(i + 1)}>{i}</button>);
         }
-        return <div className="tw-join tw-justify-center">{divs}</div>;
+        return <div>{divs}</div>;
     }
 
-
     useEffect(() => {
-        // fetchPage(page).then(data => setData(data))
         dispatch(fetchProductPage(page))
     }, [page]);
 
-
     return (<div className="Container">
         <div className="ProductOverview">
-            {/* <CarouselSlider /> */}
             <AnimatePresence>
                 {items ?
                     items?.items?.map((product, index) =>
@@ -85,8 +35,7 @@ const ProductOverview = () => {
             </AnimatePresence>
 
         </div>
-        {/* {paginationElement(sortedItems?.totalPages)} */}
     </div>);
 }
 
-export default observer(ProductOverview);
+export default ProductOverview;
